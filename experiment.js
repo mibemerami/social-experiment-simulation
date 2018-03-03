@@ -1,28 +1,21 @@
 var getAllKingdomsAlive = function(kingdoms) {
-  // return kingdoms
-  //   .map(kingdom => {
-  //     if (kingdom.alife) {
-  //       return kingdom.id;
-  //     }
-  //   })
-  //   .filter(item => item !== undefined);
   return kingdoms.filter(kingdom => kingdom.alife).map(kingdom => kingdom.id);
 };
-var excludeAttackerIndex = function(alifesIndices, attackersIndex) {
-  const cutIndex = alifesIndices.indexOf(attackersIndex);
-  alifesIndices.splice(cutIndex, 1);
-  return alifesIndices;
+var excludeAttackerID = function(alifesIDs, attackersID) {
+  const cutIndex = alifesIDs.indexOf(attackersID);
+  alifesIDs.splice(cutIndex, 1);
+  return alifesIDs;
 };
-var findPotentialVictims = function(attackersIndex, kingdoms) {
-  let alifesIndices = getAllKingdomsAlive(kingdoms);
-  const potentialVictims = excludeAttackerIndex(alifesIndices, attackersIndex);
+var findPotentialVictims = function(attackersID, kingdoms) {
+  let alifesIDs = getAllKingdomsAlive(kingdoms);
+  const potentialVictims = excludeAttackerID(alifesIDs, attackersID);
   return potentialVictims;
 };
 var selectVictim = function(attackersID, kingdoms) {
   let potentialVictimsIDs = findPotentialVictims(attackersID, kingdoms);
   const n = Math.floor(Math.random() * potentialVictimsIDs.length);
-  const victimsIndex = potentialVictimsIDs[n];
-  return { attacker: attackersID, victim: victimsIndex };
+  const victimsID = potentialVictimsIDs[n];
+  return { attacker: attackersID, victim: victimsID };
 };
 var isAggressiveAndAlife = function(kingdom) {
   if (kingdom.mode === "agressive" && kingdom.alife) {
