@@ -1,11 +1,12 @@
 var getAllKingdomsAlive = function(kingdoms) {
-  return kingdoms
-    .map((kingdom, index) => {
-      if (kingdom.alife) {
-        return index;
-      }
-    })
-    .filter(item => item !== undefined);
+  // return kingdoms
+  //   .map(kingdom => {
+  //     if (kingdom.alife) {
+  //       return kingdom.id;
+  //     }
+  //   })
+  //   .filter(item => item !== undefined);
+  return kingdoms.filter(kingdom => kingdom.alife).map(kingdom => kingdom.id);
 };
 var excludeAttackerIndex = function(alifesIndices, attackersIndex) {
   const cutIndex = alifesIndices.indexOf(attackersIndex);
@@ -17,11 +18,11 @@ var findPotentialVictims = function(attackersIndex, kingdoms) {
   const potentialVictims = excludeAttackerIndex(alifesIndices, attackersIndex);
   return potentialVictims;
 };
-var selectVictim = function(attackersIndex, kingdoms) {
-  let potentialVictimsIndices = findPotentialVictims(attackersIndex, kingdoms);
-  const n = Math.floor(Math.random() * potentialVictimsIndices.length);
-  const victimsIndex = potentialVictimsIndices[n];
-  return { attacker: attackersIndex, victim: victimsIndex };
+var selectVictim = function(attackersID, kingdoms) {
+  let potentialVictimsIDs = findPotentialVictims(attackersID, kingdoms);
+  const n = Math.floor(Math.random() * potentialVictimsIDs.length);
+  const victimsIndex = potentialVictimsIDs[n];
+  return { attacker: attackersID, victim: victimsIndex };
 };
 var isAggressiveAndAlife = function(kingdom) {
   if (kingdom.mode === "agressive" && kingdom.alife) {
@@ -42,7 +43,7 @@ var findBattleFields = function(matchings) {
 var createWeightedOppnentsArrey = function(kingdoms, opponents) {
   let oppponentsWeights = [];
   opponents.forEach(opponent => {
-    for (i = 0; i < kingdoms[opponent].army; i++) {
+    for (let i = 0; i < kingdoms[opponent].army; i++) {
       oppponentsWeights.push(opponent);
     }
   });
@@ -131,10 +132,10 @@ var findAttackers = function(kingdoms) {
   return attackers;
 };
 var makeTurn = function(kingdoms) {
-  const attackersIndices = findAttackers(kingdoms);
-  console.log("attackersIndices: ");
-  console.log(attackersIndices);
-  const matchings = attackersIndices.map(attacker => {
+  const attackersIDs = findAttackers(kingdoms);
+  console.log("attackersIDs: ");
+  console.log(attackersIDs);
+  const matchings = attackersIDs.map(attacker => {
     return selectVictim(attacker, kingdoms);
   });
   calculateAttacks(kingdoms, matchings);
@@ -184,7 +185,6 @@ var startExperiment = function(
     startArmy
   );
   console.log("Start:");
-  // console.log(kingdoms);
   for (let round = 0; round < rounds; round++) {
     console.log("Round: " + round);
     makeTurn(kingdoms);
