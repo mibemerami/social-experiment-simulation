@@ -101,7 +101,7 @@ var applyRulesAfterBattle = function(kingdoms, battleResults) {
   setLife(kingdoms);
   return kingdoms;
 };
-var calculateAttacks = function(kingdoms, matchings) {
+var calculateWarResults = function(kingdoms, matchings) {
   const battleFields = findBattleFields(matchings);
   battleResults = battleFields.map(x => getBattleResults(kingdoms, x));
   console.log("Battleresults:");
@@ -124,14 +124,18 @@ var findAttackers = function(kingdoms) {
   });
   return attackers;
 };
-var makeTurn = function(kingdoms) {
+var findWarMatchings = function(kingdoms) {
   const attackersIDs = findAttackers(kingdoms);
   console.log("attackersIDs: ");
   console.log(attackersIDs);
   const matchings = attackersIDs.map(attacker => {
     return selectVictim(attacker, kingdoms);
   });
-  calculateAttacks(kingdoms, matchings);
+  return matchings;
+};
+var makeTurn = function(kingdoms) {
+  const matchings = findWarMatchings(kingdoms);
+  calculateWarResults(kingdoms, matchings);
   return kingdoms;
 };
 var createKingdoms = function(
