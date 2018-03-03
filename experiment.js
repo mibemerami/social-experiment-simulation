@@ -1,3 +1,5 @@
+"use strickt";
+
 var getAllKingdomsAlive = function(kingdoms) {
   return kingdoms.filter(kingdom => kingdom.alife).map(kingdom => kingdom.id);
 };
@@ -23,6 +25,8 @@ var isAggressiveAndAlife = function(kingdom) {
   }
 };
 var findBattleFields = function(matchings) {
+  console.log("Matchings in findBattleFilss(): ");
+  console.log(matchings);
   let done = [];
   return matchings
     .map((itemA, index, self) => {
@@ -34,9 +38,12 @@ var findBattleFields = function(matchings) {
     .filter(item => item !== undefined);
 };
 var createWeightedOppnentsArrey = function(kingdoms, opponents) {
+  console.log("opponents in createWeightedOppnentsArrey()");
+  console.log(opponents);
   let oppponentsWeights = [];
   opponents.forEach(opponent => {
-    for (let i = 0; i < kingdoms[opponent].army; i++) {
+    const opponentsArmy = getKingdomByID(kingdoms, opponent).army;
+    for (let i = 0; i < opponentsArmy; i++) {
       oppponentsWeights.push(opponent);
     }
   });
@@ -49,25 +56,30 @@ var getRandomElementFromArray = function(array) {
 var getBattleResults = function(kingdoms, battleField) {
   let opponents = battleField.map(x => x.attacker);
   opponents.push(battleField[0].victim);
-  let oppponentsWeights = createWeightedOppnentsArrey(kingdoms, opponents);
+  const oppponentsWeights = createWeightedOppnentsArrey(kingdoms, opponents);
   const winner = getRandomElementFromArray(oppponentsWeights);
   return opponents.map(opponent => {
+    const opponentsMoney = getKingdomByID(kingdoms, opponent).money;
     return {
-      index: opponent,
+      id: opponent,
       isWinner: opponent === winner,
       isAttacker: opponent !== battleField[0].victim,
-      lockedMoney: kingdoms[opponent].money
+      lockedMoney: opponentsMoney
     };
   });
+};
+var getKingdomByID = function(kingdoms, id) {
+  return kingdoms.filter(kingdom => kingdom.id === id)[0];
 };
 var setArmyStrength = function(kingdoms, battleResults) {
   battleResults.forEach(resultArray => {
     resultArray.forEach(result => {
+      let resultKingdom = getKingdomByID(kingdoms, result.id);
       if (
         (!result.isWinner && result.isAttacker) ||
-        (!result.isWinner && kingdoms[result.index].mode === "peacefull") // Because peacefull means that the army isn't somewhere else.
+        (!result.isWinner && resultKingdom.mode === "peacefull") // Because peacefull means that the army isn't somewhere else.
       ) {
-        kingdoms[result.index].army = 0;
+        resultKingdom.army = 0;
       }
     });
   });
@@ -78,9 +90,9 @@ var setPrey = function(kingdoms, battleResults) {
     console.log(resultArray);
     const winner = resultArray[resultArray.findIndex(x => x.isWinner)];
     const victim = resultArray[resultArray.findIndex(x => !x.isAttacker)];
-    if (winner.index !== victim.index) {
-      kingdoms[winner.index].money += victim.lockedMoney;
-      kingdoms[victim.index].money -= victim.lockedMoney;
+    if (winner.id !== victim.id) {
+      getKingdomByID(kingdoms, winner.id).money += victim.lockedMoney;
+      getKingdomByID(kingdoms, victim.id).money -= victim.lockedMoney;
     }
   });
   return kingdoms;
@@ -103,7 +115,9 @@ var applyRulesAfterBattle = function(kingdoms, battleResults) {
 };
 var calculateWarResults = function(kingdoms, matchings) {
   const battleFields = findBattleFields(matchings);
-  battleResults = battleFields.map(x => getBattleResults(kingdoms, x));
+  battleResults = battleFields.map(battleField =>
+    getBattleResults(kingdoms, battleField)
+  );
   console.log("Battleresults:");
   console.log(battleResults);
   applyRulesAfterBattle(kingdoms, battleResults);
@@ -145,7 +159,7 @@ var createKingdoms = function(
   startArmy
 ) {
   let kingdoms = [];
-  let idCounter = 0;
+  let idCounter = 100;
   for (let i = 0; i < agressiveKingdoms; i++) {
     kingdoms.push({
       id: idCounter,
