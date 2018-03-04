@@ -3,4 +3,6 @@ function getRandomElementFromArray(array) {
   return array[n];
 }
 
-module.exports = getRandomElementFromArray;
+module.exports = {
+  getRandomElementFromArray: getRandomElementFromArray
+};
