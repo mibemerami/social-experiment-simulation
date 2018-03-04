@@ -1,16 +1,16 @@
 "use strickt";
 
 var getAllKingdomsAlive = function(kingdoms) {
-  return kingdoms.filter(kingdom => kingdom.alife).map(kingdom => kingdom.id);
+  return kingdoms.filter(kingdom => kingdom.alive).map(kingdom => kingdom.id);
 };
-var excludeAttackerID = function(alifesIDs, attackersID) {
-  const cutIndex = alifesIDs.indexOf(attackersID);
-  alifesIDs.splice(cutIndex, 1);
-  return alifesIDs;
+var excludeAttackerID = function(alivesIDs, attackersID) {
+  const cutIndex = alivesIDs.indexOf(attackersID);
+  alivesIDs.splice(cutIndex, 1);
+  return alivesIDs;
 };
 var findPotentialVictims = function(attackersID, kingdoms) {
-  let alifesIDs = getAllKingdomsAlive(kingdoms);
-  const potentialVictims = excludeAttackerID(alifesIDs, attackersID);
+  let alivesIDs = getAllKingdomsAlive(kingdoms);
+  const potentialVictims = excludeAttackerID(alivesIDs, attackersID);
   return potentialVictims;
 };
 var selectVictim = function(attackersID, kingdoms) {
@@ -20,7 +20,7 @@ var selectVictim = function(attackersID, kingdoms) {
   return { attacker: attackersID, victim: victimsID };
 };
 var isAggressiveAndAlife = function(kingdom) {
-  if (kingdom.mode === "agressive" && kingdom.alife) {
+  if (kingdom.mode === "agressive" && kingdom.alive) {
     return true;
   }
 };
@@ -100,7 +100,7 @@ var setPrey = function(kingdoms, battleResults) {
 var setLife = function(kingdoms) {
   kingdoms.forEach(kingdom => {
     if (kingdom.money <= 0) {
-      kingdom.alife = false;
+      kingdom.alive = false;
     }
   });
   return kingdoms;
@@ -165,7 +165,7 @@ var createKingdoms = function(
       id: idCounter,
       mode: "agressive",
       money: startMoney,
-      alife: true,
+      alive: true,
       army: startArmy
     });
     idCounter++;
@@ -175,7 +175,7 @@ var createKingdoms = function(
       id: idCounter,
       mode: "peacefull",
       money: startMoney,
-      alife: true,
+      alive: true,
       army: startArmy
     });
     idCounter++;
