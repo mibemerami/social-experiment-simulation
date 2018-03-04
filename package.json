@@ -1,0 +1,14 @@
+{
+  "name": "experiment-01",
+  "version": "1.0.0",
+  "description": "A social and a programming experiment. ",
+  "main": "experiment.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Milan Brzezinski",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^22.4.2"
+  }
+}
