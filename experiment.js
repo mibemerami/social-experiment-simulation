@@ -72,6 +72,8 @@ var getKingdomByID = function(kingdoms, id) {
   return kingdoms.filter(kingdom => kingdom.id === id)[0];
 };
 var setArmyStrength = function(kingdoms, battleResults) {
+  console.log("setArmyStrength Battleresults:");
+  console.log(battleResults);
   battleResults.forEach(resultArray => {
     resultArray.forEach(result => {
       let resultKingdom = getKingdomByID(kingdoms, result.id);
@@ -204,4 +206,4 @@ var startExperiment = function(
   }
 };
 
-startExperiment(12, 12, 10, 100, 100);
+startExperiment(6, 6, 10, 100, 100);

@@ -1,9 +1,11 @@
 "use strict";
 
+const myUtils = require("./myUtils");
+
 function setArmyStrength(kingdoms, battleResults) {
   battleResults.forEach(resultArray => {
     resultArray.forEach(result => {
-      let resultKingdom = getKingdomByID(kingdoms, result.id);
+      let resultKingdom = myUtils.getKingdomByID(kingdoms, result.id);
       if (
         (!result.isWinner && result.isAttacker) ||
         (!result.isWinner && resultKingdom.mode === "peacefull") // Because peacefull means that the army isn't somewhere else.
