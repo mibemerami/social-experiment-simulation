@@ -1,4 +1,4 @@
-"use strickt";
+"use strict";
 
 var getAllKingdomsAlive = function(kingdoms) {
   return kingdoms.filter(kingdom => kingdom.alive).map(kingdom => kingdom.id);
@@ -117,7 +117,7 @@ var applyRulesAfterBattle = function(kingdoms, battleResults) {
 };
 var calculateWarResults = function(kingdoms, matchings) {
   const battleFields = findBattleFields(matchings);
-  battleResults = battleFields.map(battleField =>
+  const battleResults = battleFields.map(battleField =>
     getBattleResults(kingdoms, battleField)
   );
   console.log("Battleresults:");
