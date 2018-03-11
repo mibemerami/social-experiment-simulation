@@ -1,5 +1,7 @@
 "use strict";
 
+let reportLogs = require("./reportLogs");
+
 var getAllKingdomsAlive = function(kingdoms) {
   return kingdoms.filter(kingdom => kingdom.alive).map(kingdom => kingdom.id);
 };
@@ -149,9 +151,10 @@ var findWarMatchings = function(kingdoms) {
   });
   return matchings;
 };
-var makeTurn = function(kingdoms) {
+var makeTurn = function(kingdoms, round) {
   const matchings = findWarMatchings(kingdoms);
   calculateWarResults(kingdoms, matchings);
+  reportLogs.report = reportLogs.reportRound(reportLogs.report, round);
   return kingdoms;
 };
 var createKingdoms = function(
@@ -184,6 +187,31 @@ var createKingdoms = function(
   }
   return kingdoms;
 };
+var initializeReportObject = function(
+  agressiveKingdoms,
+  peacefullKingdoms,
+  rounds,
+  startMoney,
+  startArmy,
+  allKingdoms
+) {
+  let timestamp = new Date();
+  let startParams = {
+    agressiveKingdoms: agressiveKingdoms,
+    peacefullKingdoms: peacefullKingdoms,
+    rounds: rounds,
+    startMoney: startMoney,
+    startArmy: startArmy
+  };
+  let initialValues = {
+    date: timestamp,
+    startParams: startParams,
+    allKingdoms: allKingdoms
+  };
+  console.log("report init:");
+  console.log({ initialValues: initialValues, rounds: [] });
+  return { initialValues: initialValues, rounds: [] };
+};
 var startExperiment = function(
   agressiveKingdoms,
   peacefullKingdoms,
@@ -197,13 +225,23 @@ var startExperiment = function(
     startMoney,
     startArmy
   );
+  reportLogs.report = reportLogs.initializeReportObject(
+    agressiveKingdoms,
+    peacefullKingdoms,
+    rounds,
+    startMoney,
+    startArmy,
+    kingdoms
+  );
   console.log("Start:");
   for (let round = 0; round < rounds; round++) {
     console.log("Round: " + round);
-    makeTurn(kingdoms);
+    makeTurn(kingdoms, round);
     console.log("All kingdoms after turn: ");
     console.log(kingdoms);
   }
+  console.log("Report:");
+  console.log(reportLogs.report);
 };
 
 startExperiment(6, 6, 10, 100, 100);

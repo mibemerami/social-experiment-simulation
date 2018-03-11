@@ -58,7 +58,7 @@ describe("reportRound", () => {
       rounds: []
     };
     const round = 0;
-    reportLogs.reportRound(report, round);
+    report = reportLogs.reportRound(report, round);
     expect(report.rounds[0].round).toBe(0);
   });
 });

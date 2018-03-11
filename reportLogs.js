@@ -2,7 +2,7 @@
 
 let report = {};
 
-var initializeReportObject = function(
+function initializeReportObject(
   agressiveKingdoms,
   peacefullKingdoms,
   rounds,
@@ -23,13 +23,12 @@ var initializeReportObject = function(
     startParams: startParams,
     allKingdoms: allKingdoms
   };
-  console.log("report init:");
-  console.log({ initialValues: initialValues, rounds: [] });
   return { initialValues: initialValues, rounds: [] };
-};
+}
 
 function reportRound(report, round) {
   report.rounds.push({ round: round });
+  return report;
 }
 
 module.exports = {
