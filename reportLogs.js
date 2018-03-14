@@ -31,8 +31,15 @@ function reportRound(report, round) {
   return report;
 }
 
+function battleResults(report, battleResults, round) {
+  const i = report.rounds.findIndex(r => r.round == round);
+  report.rounds[i].battleResults = battleResults;
+  return report;
+}
+
 module.exports = {
   report: report,
   initializeReportObject: initializeReportObject,
-  reportRound: reportRound
+  reportRound: reportRound,
+  battleResults: battleResults
 };

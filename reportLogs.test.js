@@ -62,3 +62,58 @@ describe("reportRound", () => {
     expect(report.rounds[0].round).toBe(0);
   });
 });
+
+describe("battleResults", () => {
+  // Adds the Battleresults of each round to the report.
+
+  it("adds the battleresults to the given round", () => {
+    let testReport = {
+      initialValues: {
+        date: "2018-03-10T01:01:17.160Z",
+        startParams: {
+          agressiveKingdoms: 6,
+          peacefullKingdoms: 6,
+          rounds: 10,
+          startMoney: 100,
+          startArmy: 100
+        },
+        allKingdoms: [{}, {}]
+      },
+      rounds: [{ round: 0 }, { round: 1 }]
+    };
+    const battleResults = [
+      [
+        { id: 101, isWinner: true, isAttacker: true, lockedMoney: 300 },
+        { id: 100, isWinner: false, isAttacker: false, lockedMoney: 300 }
+      ]
+    ];
+    const round = 1;
+    const controlReport = {
+      initialValues: {
+        date: "2018-03-10T01:01:17.160Z",
+        startParams: {
+          agressiveKingdoms: 6,
+          peacefullKingdoms: 6,
+          rounds: 10,
+          startMoney: 100,
+          startArmy: 100
+        },
+        allKingdoms: [{}, {}]
+      },
+      rounds: [
+        { round: 0 },
+        {
+          round: 1,
+          battleResults: [
+            [
+              { id: 101, isWinner: true, isAttacker: true, lockedMoney: 300 },
+              { id: 100, isWinner: false, isAttacker: false, lockedMoney: 300 }
+            ]
+          ]
+        }
+      ]
+    };
+    testReport = reportLogs.battleResults(testReport, battleResults, round);
+    expect(testReport).toEqual(controlReport);
+  });
+});
