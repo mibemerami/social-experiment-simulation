@@ -1,14 +1,18 @@
 {
   "name": "experiment-01",
   "version": "1.0.0",
-  "description": "A social and a programming experiment. ",
+  "description": "A social and a personal programming experiment. ",
   "main": "experiment.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "start": "node experiment.js"
   },
   "author": "Milan Brzezinski",
   "license": "ISC",
   "devDependencies": {
     "jest": "^22.4.2"
+  },
+  "dependencies": {
+    "npm": "^5.7.1"
   }
 }
