@@ -21,7 +21,7 @@ function initializeReportObject(
   let initialValues = {
     date: timestamp,
     startParams: startParams,
-    allKingdoms: allKingdoms
+    kingdoms: allKingdoms
   };
   return { initialValues: initialValues, rounds: [] };
 }

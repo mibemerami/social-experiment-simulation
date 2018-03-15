@@ -17,7 +17,7 @@ describe("report creation", () => {
           startMoney: 300,
           startArmy: 200
         },
-        allKingdoms: [{}, {}, {}, {}]
+        kingdoms: [{}, {}, {}, {}]
       },
       rounds: []
     };
@@ -31,8 +31,8 @@ describe("report creation", () => {
     expect(testReport.initialValues.startParams).toEqual(
       controlReport.initialValues.startParams
     );
-    expect(testReport.initialValues.allKindoms).toEqual(
-      controlReport.initialValues.allKindoms
+    expect(testReport.initialValues.kingdoms).toEqual(
+      controlReport.initialValues.kingdoms
     );
     expect(testReport.rounds).toEqual(controlReport.rounds);
   });
@@ -53,7 +53,7 @@ describe("setReportRound", () => {
           startMoney: 100,
           startArmy: 100
         },
-        allKingdoms: []
+        kingdoms: []
       },
       rounds: []
     };
@@ -77,7 +77,7 @@ describe("setBattleResults", () => {
           startMoney: 100,
           startArmy: 100
         },
-        allKingdoms: [{}, {}]
+        kingdoms: [{}, {}]
       },
       rounds: [{ round: 0 }, { round: 1 }]
     };
@@ -98,7 +98,7 @@ describe("setBattleResults", () => {
           startMoney: 100,
           startArmy: 100
         },
-        allKingdoms: [{}, {}]
+        kingdoms: [{}, {}]
       },
       rounds: [
         { round: 0 },
@@ -130,7 +130,7 @@ describe("setChangedKingdoms", () => {
         startMoney: 100,
         startArmy: 100
       },
-      allKingdoms: [{}, {}]
+      kingdoms: [{}, {}]
     },
     rounds: [
       { round: 0 },
@@ -170,7 +170,7 @@ describe("setChangedKingdoms", () => {
         startMoney: 100,
         startArmy: 100
       },
-      allKingdoms: [{}, {}]
+      kingdoms: [{}, {}]
     },
     rounds: [
       { round: 0 },
