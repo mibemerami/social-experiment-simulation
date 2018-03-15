@@ -26,20 +26,27 @@ function initializeReportObject(
   return { initialValues: initialValues, rounds: [] };
 }
 
-function reportRound(report, round) {
+function setReportRound(report, round) {
   report.rounds.push({ round: round });
   return report;
 }
 
-function battleResults(report, battleResults, round) {
-  const i = report.rounds.findIndex(r => r.round == round);
+function setBattleResults(report, battleResults, round) {
+  const i = report.rounds.findIndex(r => r.round === round);
   report.rounds[i].battleResults = battleResults;
+  return report;
+}
+
+function setChangedKingdoms(report, kingdoms, round) {
+  const i = report.rounds.findIndex(r => r.round === round);
+  report.rounds[i].kingdoms = kingdoms;
   return report;
 }
 
 module.exports = {
   report: report,
   initializeReportObject: initializeReportObject,
-  reportRound: reportRound,
-  battleResults: battleResults
+  setReportRound: setReportRound,
+  setBattleResults: setBattleResults,
+  setChangedKingdoms: setChangedKingdoms
 };

@@ -117,13 +117,18 @@ var applyRulesAfterBattle = function(kingdoms, battleResults) {
   setLife(kingdoms);
   return kingdoms;
 };
-var calculateWarResults = function(kingdoms, matchings) {
+var calculateWarResults = function(kingdoms, matchings, round) {
   const battleFields = findBattleFields(matchings);
   const battleResults = battleFields.map(battleField =>
     getBattleResults(kingdoms, battleField)
   );
   console.log("Battleresults:");
   console.log(battleResults);
+  reportLogs.report = reportLogs.setBattleResults(
+    reportLogs.report,
+    battleResults,
+    round
+  );
   applyRulesAfterBattle(kingdoms, battleResults);
   return kingdoms;
 };
@@ -152,9 +157,14 @@ var findWarMatchings = function(kingdoms) {
   return matchings;
 };
 var makeTurn = function(kingdoms, round) {
+  reportLogs.report = reportLogs.setReportRound(reportLogs.report, round);
   const matchings = findWarMatchings(kingdoms);
-  calculateWarResults(kingdoms, matchings);
-  reportLogs.report = reportLogs.reportRound(reportLogs.report, round);
+  calculateWarResults(kingdoms, matchings, round);
+  reportLogs.report = reportLogs.setChangedKingdoms(
+    reportLogs.report,
+    kingdoms,
+    round
+  );
   return kingdoms;
 };
 var createKingdoms = function(
