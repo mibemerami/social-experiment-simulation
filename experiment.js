@@ -250,8 +250,11 @@ var startExperiment = function(
     console.log("All kingdoms after turn: ");
     console.log(kingdoms);
   }
-  console.log("Report:");
-  console.log(reportLogs.report);
+  return reportLogs.report;
 };
 
 startExperiment(6, 6, 10, 100, 100);
+
+module.exports = {
+  startExperiment
+};
