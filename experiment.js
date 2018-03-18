@@ -129,8 +129,9 @@ var calculateWarResults = function(kingdoms, matchings, round) {
     battleResults,
     round
   );
-  applyRulesAfterBattle(kingdoms, battleResults);
-  return kingdoms;
+  return battleResults;
+  // applyRulesAfterBattle(kingdoms, battleResults);
+  // return kingdoms;
 };
 var hasEnoughArmy = function(kingdom) {
   console.log(kingdom);
@@ -166,7 +167,8 @@ var makeTurn = function(kingdoms, round) {
   if (enoughKingdomsLeft(kingdoms)) {
     reportLogs.report = reportLogs.setReportRound(reportLogs.report, round);
     const matchings = findWarMatchings(kingdoms);
-    calculateWarResults(kingdoms, matchings, round);
+    const battleResults = calculateWarResults(kingdoms, matchings, round);
+    kingdoms = applyRulesAfterBattle(kingdoms, battleResults);
     reportLogs.report = reportLogs.setChangedKingdoms(
       reportLogs.report,
       kingdoms,
