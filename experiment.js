@@ -156,15 +156,26 @@ var findWarMatchings = function(kingdoms) {
   });
   return matchings;
 };
-var makeTurn = function(kingdoms, round) {
-  reportLogs.report = reportLogs.setReportRound(reportLogs.report, round);
-  const matchings = findWarMatchings(kingdoms);
-  calculateWarResults(kingdoms, matchings, round);
-  reportLogs.report = reportLogs.setChangedKingdoms(
-    reportLogs.report,
-    kingdoms,
-    round
+var enoughKingdomsLeft = function(kingdoms) {
+  return (
+    kingdoms.filter(kingdom => kingdom.alive).map(kingdom => kingdom.id)
+      .length >= 2
   );
+};
+var makeTurn = function(kingdoms, round) {
+  if (enoughKingdomsLeft(kingdoms)) {
+    reportLogs.report = reportLogs.setReportRound(reportLogs.report, round);
+    const matchings = findWarMatchings(kingdoms);
+    calculateWarResults(kingdoms, matchings, round);
+    reportLogs.report = reportLogs.setChangedKingdoms(
+      reportLogs.report,
+      kingdoms,
+      round
+    );
+  } else {
+    console.log("Only one kindom is left alive, turn was skipped. ");
+    reportLogs.report = reportLogs.copyLastRound(reportLogs.report, round);
+  }
   return kingdoms;
 };
 var createKingdoms = function(

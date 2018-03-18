@@ -202,3 +202,115 @@ describe("setChangedKingdoms", () => {
   testReport = reportLogs.setChangedKingdoms(testReport, kingdoms, round);
   expect(testReport).toEqual(controlReport);
 });
+
+describe("copyLastRound", () => {
+  // Copies the values from the last roundto the currend round. To be used for example
+  // if a turn is skipped, because there is only one kingdom left.
+
+  it("copies the last round object, overrides the round number with the currend one and pushes it to rounds.", () => {
+    let testReport = {
+      initialValues: {
+        date: "2018-03-10T01:01:17.160Z",
+        startParams: {
+          agressiveKingdoms: 6,
+          peacefullKingdoms: 6,
+          rounds: 10,
+          startMoney: 100,
+          startArmy: 100
+        },
+        kingdoms: [{}, {}]
+      },
+      rounds: [
+        { round: 0 },
+        {
+          round: 1,
+          battleResults: [
+            [
+              { id: 101, isWinner: true, isAttacker: true, lockedMoney: 300 },
+              { id: 100, isWinner: false, isAttacker: false, lockedMoney: 300 }
+            ]
+          ],
+          kingdoms: [
+            { id: 100, mode: "agressive", money: 0, alive: false, army: 0 },
+            { id: 101, mode: "agressive", money: 0, alive: false, army: 0 },
+            { id: 102, mode: "agressive", money: 300, alive: true, army: 100 },
+            { id: 103, mode: "agressive", money: 0, alive: false, army: 0 },
+            { id: 104, mode: "agressive", money: 200, alive: true, army: 0 },
+            { id: 105, mode: "agressive", money: 100, alive: true, army: 0 },
+            { id: 106, mode: "peacefull", money: 100, alive: true, army: 100 },
+            { id: 107, mode: "peacefull", money: 100, alive: true, army: 100 },
+            { id: 108, mode: "peacefull", money: 100, alive: true, army: 100 },
+            { id: 109, mode: "peacefull", money: 100, alive: true, army: 100 },
+            { id: 110, mode: "peacefull", money: 100, alive: true, army: 100 },
+            { id: 111, mode: "peacefull", money: 100, alive: true, army: 100 }
+          ]
+        }
+      ]
+    };
+    const controlReport = {
+      initialValues: {
+        date: "2018-03-10T01:01:17.160Z",
+        startParams: {
+          agressiveKingdoms: 6,
+          peacefullKingdoms: 6,
+          rounds: 10,
+          startMoney: 100,
+          startArmy: 100
+        },
+        kingdoms: [{}, {}]
+      },
+      rounds: [
+        { round: 0 },
+        {
+          round: 1,
+          battleResults: [
+            [
+              { id: 101, isWinner: true, isAttacker: true, lockedMoney: 300 },
+              { id: 100, isWinner: false, isAttacker: false, lockedMoney: 300 }
+            ]
+          ],
+          kingdoms: [
+            { id: 100, mode: "agressive", money: 0, alive: false, army: 0 },
+            { id: 101, mode: "agressive", money: 0, alive: false, army: 0 },
+            { id: 102, mode: "agressive", money: 300, alive: true, army: 100 },
+            { id: 103, mode: "agressive", money: 0, alive: false, army: 0 },
+            { id: 104, mode: "agressive", money: 200, alive: true, army: 0 },
+            { id: 105, mode: "agressive", money: 100, alive: true, army: 0 },
+            { id: 106, mode: "peacefull", money: 100, alive: true, army: 100 },
+            { id: 107, mode: "peacefull", money: 100, alive: true, army: 100 },
+            { id: 108, mode: "peacefull", money: 100, alive: true, army: 100 },
+            { id: 109, mode: "peacefull", money: 100, alive: true, army: 100 },
+            { id: 110, mode: "peacefull", money: 100, alive: true, army: 100 },
+            { id: 111, mode: "peacefull", money: 100, alive: true, army: 100 }
+          ]
+        },
+        {
+          round: 2,
+          battleResults: [
+            [
+              { id: 101, isWinner: true, isAttacker: true, lockedMoney: 300 },
+              { id: 100, isWinner: false, isAttacker: false, lockedMoney: 300 }
+            ]
+          ],
+          kingdoms: [
+            { id: 100, mode: "agressive", money: 0, alive: false, army: 0 },
+            { id: 101, mode: "agressive", money: 0, alive: false, army: 0 },
+            { id: 102, mode: "agressive", money: 300, alive: true, army: 100 },
+            { id: 103, mode: "agressive", money: 0, alive: false, army: 0 },
+            { id: 104, mode: "agressive", money: 200, alive: true, army: 0 },
+            { id: 105, mode: "agressive", money: 100, alive: true, army: 0 },
+            { id: 106, mode: "peacefull", money: 100, alive: true, army: 100 },
+            { id: 107, mode: "peacefull", money: 100, alive: true, army: 100 },
+            { id: 108, mode: "peacefull", money: 100, alive: true, army: 100 },
+            { id: 109, mode: "peacefull", money: 100, alive: true, army: 100 },
+            { id: 110, mode: "peacefull", money: 100, alive: true, army: 100 },
+            { id: 111, mode: "peacefull", money: 100, alive: true, army: 100 }
+          ]
+        }
+      ]
+    };
+    const currendRound = 2;
+    testReport = reportLogs.copyLastRound(testReport, currendRound);
+    expect(testReport).toEqual(controlReport);
+  });
+});

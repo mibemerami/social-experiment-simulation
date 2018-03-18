@@ -43,10 +43,20 @@ function setChangedKingdoms(report, kingdoms, round) {
   return report;
 }
 
+function copyLastRound(report, currendRound) {
+  let lastRoundCopy = JSON.parse(
+    JSON.stringify(report.rounds.find(r => r.round === currendRound - 1))
+  );
+  lastRoundCopy.round = currendRound;
+  report.rounds.push(lastRoundCopy);
+  return report;
+}
+
 module.exports = {
   report: report,
   initializeReportObject: initializeReportObject,
   setReportRound: setReportRound,
   setBattleResults: setBattleResults,
-  setChangedKingdoms: setChangedKingdoms
+  setChangedKingdoms: setChangedKingdoms,
+  copyLastRound: copyLastRound
 };
