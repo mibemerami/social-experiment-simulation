@@ -11,8 +11,8 @@ describe("report creation", () => {
       initialValues: {
         date: "2018-03-10T21:40:11.004Z",
         startParams: {
-          agressiveKingdoms: 2,
-          peacefullKingdoms: 2,
+          aggressiveKingdoms: 2,
+          peacefulKingdoms: 2,
           rounds: 8,
           startMoney: 300,
           startArmy: 200
@@ -47,8 +47,8 @@ describe("setReportRound", () => {
       initialValues: {
         date: "2018-03-10T01:01:17.160Z",
         startParams: {
-          agressiveKingdoms: 6,
-          peacefullKingdoms: 6,
+          aggressiveKingdoms: 6,
+          peacefulKingdoms: 6,
           rounds: 10,
           startMoney: 100,
           startArmy: 100
@@ -71,8 +71,8 @@ describe("setBattleResults", () => {
       initialValues: {
         date: "2018-03-10T01:01:17.160Z",
         startParams: {
-          agressiveKingdoms: 6,
-          peacefullKingdoms: 6,
+          aggressiveKingdoms: 6,
+          peacefulKingdoms: 6,
           rounds: 10,
           startMoney: 100,
           startArmy: 100
@@ -92,8 +92,8 @@ describe("setBattleResults", () => {
       initialValues: {
         date: "2018-03-10T01:01:17.160Z",
         startParams: {
-          agressiveKingdoms: 6,
-          peacefullKingdoms: 6,
+          aggressiveKingdoms: 6,
+          peacefulKingdoms: 6,
           rounds: 10,
           startMoney: 100,
           startArmy: 100
@@ -124,8 +124,8 @@ describe("setChangedKingdoms", () => {
     initialValues: {
       date: "2018-03-10T01:01:17.160Z",
       startParams: {
-        agressiveKingdoms: 6,
-        peacefullKingdoms: 6,
+        aggressiveKingdoms: 6,
+        peacefulKingdoms: 6,
         rounds: 10,
         startMoney: 100,
         startArmy: 100
@@ -146,26 +146,26 @@ describe("setChangedKingdoms", () => {
     ]
   };
   const kingdoms = [
-    { id: 100, mode: "agressive", money: 0, alive: false, army: 0 },
-    { id: 101, mode: "agressive", money: 0, alive: false, army: 0 },
-    { id: 102, mode: "agressive", money: 300, alive: true, army: 100 },
-    { id: 103, mode: "agressive", money: 0, alive: false, army: 0 },
-    { id: 104, mode: "agressive", money: 200, alive: true, army: 0 },
-    { id: 105, mode: "agressive", money: 100, alive: true, army: 0 },
-    { id: 106, mode: "peacefull", money: 100, alive: true, army: 100 },
-    { id: 107, mode: "peacefull", money: 100, alive: true, army: 100 },
-    { id: 108, mode: "peacefull", money: 100, alive: true, army: 100 },
-    { id: 109, mode: "peacefull", money: 100, alive: true, army: 100 },
-    { id: 110, mode: "peacefull", money: 100, alive: true, army: 100 },
-    { id: 111, mode: "peacefull", money: 100, alive: true, army: 100 }
+    { id: 100, mode: "aggressive", money: 0, alive: false, army: 0 },
+    { id: 101, mode: "aggressive", money: 0, alive: false, army: 0 },
+    { id: 102, mode: "aggressive", money: 300, alive: true, army: 100 },
+    { id: 103, mode: "aggressive", money: 0, alive: false, army: 0 },
+    { id: 104, mode: "aggressive", money: 200, alive: true, army: 0 },
+    { id: 105, mode: "aggressive", money: 100, alive: true, army: 0 },
+    { id: 106, mode: "peaceful", money: 100, alive: true, army: 100 },
+    { id: 107, mode: "peaceful", money: 100, alive: true, army: 100 },
+    { id: 108, mode: "peaceful", money: 100, alive: true, army: 100 },
+    { id: 109, mode: "peaceful", money: 100, alive: true, army: 100 },
+    { id: 110, mode: "peaceful", money: 100, alive: true, army: 100 },
+    { id: 111, mode: "peaceful", money: 100, alive: true, army: 100 }
   ];
   const round = 1;
   const controlReport = {
     initialValues: {
       date: "2018-03-10T01:01:17.160Z",
       startParams: {
-        agressiveKingdoms: 6,
-        peacefullKingdoms: 6,
+        aggressiveKingdoms: 6,
+        peacefulKingdoms: 6,
         rounds: 10,
         startMoney: 100,
         startArmy: 100
@@ -183,18 +183,18 @@ describe("setChangedKingdoms", () => {
           ]
         ],
         kingdoms: [
-          { id: 100, mode: "agressive", money: 0, alive: false, army: 0 },
-          { id: 101, mode: "agressive", money: 0, alive: false, army: 0 },
-          { id: 102, mode: "agressive", money: 300, alive: true, army: 100 },
-          { id: 103, mode: "agressive", money: 0, alive: false, army: 0 },
-          { id: 104, mode: "agressive", money: 200, alive: true, army: 0 },
-          { id: 105, mode: "agressive", money: 100, alive: true, army: 0 },
-          { id: 106, mode: "peacefull", money: 100, alive: true, army: 100 },
-          { id: 107, mode: "peacefull", money: 100, alive: true, army: 100 },
-          { id: 108, mode: "peacefull", money: 100, alive: true, army: 100 },
-          { id: 109, mode: "peacefull", money: 100, alive: true, army: 100 },
-          { id: 110, mode: "peacefull", money: 100, alive: true, army: 100 },
-          { id: 111, mode: "peacefull", money: 100, alive: true, army: 100 }
+          { id: 100, mode: "aggressive", money: 0, alive: false, army: 0 },
+          { id: 101, mode: "aggressive", money: 0, alive: false, army: 0 },
+          { id: 102, mode: "aggressive", money: 300, alive: true, army: 100 },
+          { id: 103, mode: "aggressive", money: 0, alive: false, army: 0 },
+          { id: 104, mode: "aggressive", money: 200, alive: true, army: 0 },
+          { id: 105, mode: "aggressive", money: 100, alive: true, army: 0 },
+          { id: 106, mode: "peaceful", money: 100, alive: true, army: 100 },
+          { id: 107, mode: "peaceful", money: 100, alive: true, army: 100 },
+          { id: 108, mode: "peaceful", money: 100, alive: true, army: 100 },
+          { id: 109, mode: "peaceful", money: 100, alive: true, army: 100 },
+          { id: 110, mode: "peaceful", money: 100, alive: true, army: 100 },
+          { id: 111, mode: "peaceful", money: 100, alive: true, army: 100 }
         ]
       }
     ]
@@ -212,8 +212,8 @@ describe("copyLastRound", () => {
       initialValues: {
         date: "2018-03-10T01:01:17.160Z",
         startParams: {
-          agressiveKingdoms: 6,
-          peacefullKingdoms: 6,
+          aggressiveKingdoms: 6,
+          peacefulKingdoms: 6,
           rounds: 10,
           startMoney: 100,
           startArmy: 100
@@ -231,18 +231,18 @@ describe("copyLastRound", () => {
             ]
           ],
           kingdoms: [
-            { id: 100, mode: "agressive", money: 0, alive: false, army: 0 },
-            { id: 101, mode: "agressive", money: 0, alive: false, army: 0 },
-            { id: 102, mode: "agressive", money: 300, alive: true, army: 100 },
-            { id: 103, mode: "agressive", money: 0, alive: false, army: 0 },
-            { id: 104, mode: "agressive", money: 200, alive: true, army: 0 },
-            { id: 105, mode: "agressive", money: 100, alive: true, army: 0 },
-            { id: 106, mode: "peacefull", money: 100, alive: true, army: 100 },
-            { id: 107, mode: "peacefull", money: 100, alive: true, army: 100 },
-            { id: 108, mode: "peacefull", money: 100, alive: true, army: 100 },
-            { id: 109, mode: "peacefull", money: 100, alive: true, army: 100 },
-            { id: 110, mode: "peacefull", money: 100, alive: true, army: 100 },
-            { id: 111, mode: "peacefull", money: 100, alive: true, army: 100 }
+            { id: 100, mode: "aggressive", money: 0, alive: false, army: 0 },
+            { id: 101, mode: "aggressive", money: 0, alive: false, army: 0 },
+            { id: 102, mode: "aggressive", money: 300, alive: true, army: 100 },
+            { id: 103, mode: "aggressive", money: 0, alive: false, army: 0 },
+            { id: 104, mode: "aggressive", money: 200, alive: true, army: 0 },
+            { id: 105, mode: "aggressive", money: 100, alive: true, army: 0 },
+            { id: 106, mode: "peaceful", money: 100, alive: true, army: 100 },
+            { id: 107, mode: "peaceful", money: 100, alive: true, army: 100 },
+            { id: 108, mode: "peaceful", money: 100, alive: true, army: 100 },
+            { id: 109, mode: "peaceful", money: 100, alive: true, army: 100 },
+            { id: 110, mode: "peaceful", money: 100, alive: true, army: 100 },
+            { id: 111, mode: "peaceful", money: 100, alive: true, army: 100 }
           ]
         }
       ]
@@ -251,8 +251,8 @@ describe("copyLastRound", () => {
       initialValues: {
         date: "2018-03-10T01:01:17.160Z",
         startParams: {
-          agressiveKingdoms: 6,
-          peacefullKingdoms: 6,
+          aggressiveKingdoms: 6,
+          peacefulKingdoms: 6,
           rounds: 10,
           startMoney: 100,
           startArmy: 100
@@ -270,18 +270,18 @@ describe("copyLastRound", () => {
             ]
           ],
           kingdoms: [
-            { id: 100, mode: "agressive", money: 0, alive: false, army: 0 },
-            { id: 101, mode: "agressive", money: 0, alive: false, army: 0 },
-            { id: 102, mode: "agressive", money: 300, alive: true, army: 100 },
-            { id: 103, mode: "agressive", money: 0, alive: false, army: 0 },
-            { id: 104, mode: "agressive", money: 200, alive: true, army: 0 },
-            { id: 105, mode: "agressive", money: 100, alive: true, army: 0 },
-            { id: 106, mode: "peacefull", money: 100, alive: true, army: 100 },
-            { id: 107, mode: "peacefull", money: 100, alive: true, army: 100 },
-            { id: 108, mode: "peacefull", money: 100, alive: true, army: 100 },
-            { id: 109, mode: "peacefull", money: 100, alive: true, army: 100 },
-            { id: 110, mode: "peacefull", money: 100, alive: true, army: 100 },
-            { id: 111, mode: "peacefull", money: 100, alive: true, army: 100 }
+            { id: 100, mode: "aggressive", money: 0, alive: false, army: 0 },
+            { id: 101, mode: "aggressive", money: 0, alive: false, army: 0 },
+            { id: 102, mode: "aggressive", money: 300, alive: true, army: 100 },
+            { id: 103, mode: "aggressive", money: 0, alive: false, army: 0 },
+            { id: 104, mode: "aggressive", money: 200, alive: true, army: 0 },
+            { id: 105, mode: "aggressive", money: 100, alive: true, army: 0 },
+            { id: 106, mode: "peaceful", money: 100, alive: true, army: 100 },
+            { id: 107, mode: "peaceful", money: 100, alive: true, army: 100 },
+            { id: 108, mode: "peaceful", money: 100, alive: true, army: 100 },
+            { id: 109, mode: "peaceful", money: 100, alive: true, army: 100 },
+            { id: 110, mode: "peaceful", money: 100, alive: true, army: 100 },
+            { id: 111, mode: "peaceful", money: 100, alive: true, army: 100 }
           ]
         },
         {
@@ -293,18 +293,18 @@ describe("copyLastRound", () => {
             ]
           ],
           kingdoms: [
-            { id: 100, mode: "agressive", money: 0, alive: false, army: 0 },
-            { id: 101, mode: "agressive", money: 0, alive: false, army: 0 },
-            { id: 102, mode: "agressive", money: 300, alive: true, army: 100 },
-            { id: 103, mode: "agressive", money: 0, alive: false, army: 0 },
-            { id: 104, mode: "agressive", money: 200, alive: true, army: 0 },
-            { id: 105, mode: "agressive", money: 100, alive: true, army: 0 },
-            { id: 106, mode: "peacefull", money: 100, alive: true, army: 100 },
-            { id: 107, mode: "peacefull", money: 100, alive: true, army: 100 },
-            { id: 108, mode: "peacefull", money: 100, alive: true, army: 100 },
-            { id: 109, mode: "peacefull", money: 100, alive: true, army: 100 },
-            { id: 110, mode: "peacefull", money: 100, alive: true, army: 100 },
-            { id: 111, mode: "peacefull", money: 100, alive: true, army: 100 }
+            { id: 100, mode: "aggressive", money: 0, alive: false, army: 0 },
+            { id: 101, mode: "aggressive", money: 0, alive: false, army: 0 },
+            { id: 102, mode: "aggressive", money: 300, alive: true, army: 100 },
+            { id: 103, mode: "aggressive", money: 0, alive: false, army: 0 },
+            { id: 104, mode: "aggressive", money: 200, alive: true, army: 0 },
+            { id: 105, mode: "aggressive", money: 100, alive: true, army: 0 },
+            { id: 106, mode: "peaceful", money: 100, alive: true, army: 100 },
+            { id: 107, mode: "peaceful", money: 100, alive: true, army: 100 },
+            { id: 108, mode: "peaceful", money: 100, alive: true, army: 100 },
+            { id: 109, mode: "peaceful", money: 100, alive: true, army: 100 },
+            { id: 110, mode: "peaceful", money: 100, alive: true, army: 100 },
+            { id: 111, mode: "peaceful", money: 100, alive: true, army: 100 }
           ]
         }
       ]

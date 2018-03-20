@@ -9,22 +9,22 @@ test("getRandomElementFromArray returns a value from the given array", () => {
 
 test("getKingdomByID returns the right kindom", () => {
   const kingdoms = [
-    { id: 100, mode: "agressive", money: 0, alive: false, army: 0 },
-    { id: 101, mode: "agressive", money: 0, alive: false, army: 0 },
-    { id: 102, mode: "agressive", money: 0, alive: false, army: 0 },
-    { id: 103, mode: "agressive", money: 0, alive: false, army: 0 },
-    { id: 104, mode: "agressive", money: 200, alive: true, army: 0 },
-    { id: 105, mode: "agressive", money: 500, alive: true, army: 0 },
-    { id: 106, mode: "peacefull", money: 100, alive: true, army: 100 },
-    { id: 107, mode: "peacefull", money: 0, alive: false, army: 0 },
-    { id: 108, mode: "peacefull", money: 100, alive: true, army: 100 },
-    { id: 109, mode: "peacefull", money: 100, alive: true, army: 100 },
-    { id: 110, mode: "peacefull", money: 100, alive: true, army: 100 },
-    { id: 111, mode: "peacefull", money: 100, alive: true, army: 100 }
+    { id: 100, mode: "aggressive", money: 0, alive: false, army: 0 },
+    { id: 101, mode: "aggressive", money: 0, alive: false, army: 0 },
+    { id: 102, mode: "aggressive", money: 0, alive: false, army: 0 },
+    { id: 103, mode: "aggressive", money: 0, alive: false, army: 0 },
+    { id: 104, mode: "aggressive", money: 200, alive: true, army: 0 },
+    { id: 105, mode: "aggressive", money: 500, alive: true, army: 0 },
+    { id: 106, mode: "peaceful", money: 100, alive: true, army: 100 },
+    { id: 107, mode: "peaceful", money: 0, alive: false, army: 0 },
+    { id: 108, mode: "peaceful", money: 100, alive: true, army: 100 },
+    { id: 109, mode: "peaceful", money: 100, alive: true, army: 100 },
+    { id: 110, mode: "peaceful", money: 100, alive: true, army: 100 },
+    { id: 111, mode: "peaceful", money: 100, alive: true, army: 100 }
   ];
   expect(utils.getKingdomByID(kingdoms, 105)).toEqual({
     id: 105,
-    mode: "agressive",
+    mode: "aggressive",
     money: 500,
     alive: true,
     army: 0

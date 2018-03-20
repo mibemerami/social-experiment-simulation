@@ -3,8 +3,8 @@
 let report = {};
 
 function initializeReportObject(
-  agressiveKingdoms,
-  peacefullKingdoms,
+  aggressiveKingdoms,
+  peacefulKingdoms,
   rounds,
   startMoney,
   startArmy,
@@ -12,8 +12,8 @@ function initializeReportObject(
 ) {
   let timestamp = new Date();
   let startParams = {
-    agressiveKingdoms: agressiveKingdoms,
-    peacefullKingdoms: peacefullKingdoms,
+    aggressiveKingdoms: aggressiveKingdoms,
+    peacefulKingdoms: peacefulKingdoms,
     rounds: rounds,
     startMoney: startMoney,
     startArmy: startArmy

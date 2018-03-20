@@ -22,7 +22,7 @@ var selectVictim = function(attackersID, kingdoms) {
   return { attacker: attackersID, victim: victimsID };
 };
 var isAggressiveAndAlife = function(kingdom) {
-  if (kingdom.mode === "agressive" && kingdom.alive) {
+  if (kingdom.mode === "aggressive" && kingdom.alive) {
     return true;
   }
 };
@@ -81,7 +81,7 @@ var setArmyStrength = function(kingdoms, battleResults) {
       let resultKingdom = getKingdomByID(kingdoms, result.id);
       if (
         (!result.isWinner && result.isAttacker) ||
-        (!result.isWinner && resultKingdom.mode === "peacefull") // Because peacefull means that the army isn't somewhere else.
+        (!result.isWinner && resultKingdom.mode === "peaceful") // Because peaceful means that the army isn't somewhere else.
       ) {
         resultKingdom.army = 0;
       }
@@ -181,27 +181,27 @@ var makeTurn = function(kingdoms, round) {
   return kingdoms;
 };
 var createKingdoms = function(
-  agressiveKingdoms,
-  peacefullKingdoms,
+  aggressiveKingdoms,
+  peacefulKingdoms,
   startMoney,
   startArmy
 ) {
   let kingdoms = [];
   let idCounter = 100;
-  for (let i = 0; i < agressiveKingdoms; i++) {
+  for (let i = 0; i < aggressiveKingdoms; i++) {
     kingdoms.push({
       id: idCounter,
-      mode: "agressive",
+      mode: "aggressive",
       money: startMoney,
       alive: true,
       army: startArmy
     });
     idCounter++;
   }
-  for (let i = 0; i < peacefullKingdoms; i++) {
+  for (let i = 0; i < peacefulKingdoms; i++) {
     kingdoms.push({
       id: idCounter,
-      mode: "peacefull",
+      mode: "peaceful",
       money: startMoney,
       alive: true,
       army: startArmy
@@ -211,8 +211,8 @@ var createKingdoms = function(
   return kingdoms;
 };
 var initializeReportObject = function(
-  agressiveKingdoms,
-  peacefullKingdoms,
+  aggressiveKingdoms,
+  peacefulKingdoms,
   rounds,
   startMoney,
   startArmy,
@@ -220,8 +220,8 @@ var initializeReportObject = function(
 ) {
   let timestamp = new Date();
   let startParams = {
-    agressiveKingdoms: agressiveKingdoms,
-    peacefullKingdoms: peacefullKingdoms,
+    aggressiveKingdoms: aggressiveKingdoms,
+    peacefulKingdoms: peacefulKingdoms,
     rounds: rounds,
     startMoney: startMoney,
     startArmy: startArmy
@@ -236,21 +236,21 @@ var initializeReportObject = function(
   return { initialValues: initialValues, rounds: [] };
 };
 var startExperiment = function(
-  agressiveKingdoms,
-  peacefullKingdoms,
+  aggressiveKingdoms,
+  peacefulKingdoms,
   rounds,
   startMoney,
   startArmy
 ) {
   var kingdoms = createKingdoms(
-    agressiveKingdoms,
-    peacefullKingdoms,
+    aggressiveKingdoms,
+    peacefulKingdoms,
     startMoney,
     startArmy
   );
   reportLogs.report = reportLogs.initializeReportObject(
-    agressiveKingdoms,
-    peacefullKingdoms,
+    aggressiveKingdoms,
+    peacefulKingdoms,
     rounds,
     startMoney,
     startArmy,

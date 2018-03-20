@@ -8,7 +8,7 @@ function setArmyStrength(kingdoms, battleResults) {
       let resultKingdom = myUtils.getKingdomByID(kingdoms, result.id);
       if (
         (!result.isWinner && result.isAttacker) ||
-        (!result.isWinner && resultKingdom.mode === "peacefull") // Because peacefull means that the army isn't somewhere else.
+        (!result.isWinner && resultKingdom.mode === "peaceful") // Because peaceful means that the army isn't somewhere else.
       ) {
         resultKingdom.army = 0;
       }
