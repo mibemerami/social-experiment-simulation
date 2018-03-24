@@ -1,0 +1,6886 @@
+{}{
+  "initialValues": {
+    "date": "2018-03-24T02:40:13.564Z",
+    "startParams": {
+      "aggressiveKingdoms": 6,
+      "peacefulKingdoms": 6,
+      "rounds": 10,
+      "startMoney": 100,
+      "startArmy": 100
+    },
+    "kingdoms": [
+      {
+        "id": 100,
+        "mode": "aggressive",
+        "money": 300,
+        "alive": true,
+        "army": 0
+      },
+      {
+        "id": 101,
+        "mode": "aggressive",
+        "money": 100,
+        "alive": true,
+        "army": 0
+      },
+      {
+        "id": 102,
+        "mode": "aggressive",
+        "money": 100,
+        "alive": true,
+        "army": 0
+      },
+      {
+        "id": 103,
+        "mode": "aggressive",
+        "money": 100,
+        "alive": true,
+        "army": 0
+      },
+      {
+        "id": 104,
+        "mode": "aggressive",
+        "money": 100,
+        "alive": true,
+        "army": 0
+      },
+      {
+        "id": 105,
+        "mode": "aggressive",
+        "money": 100,
+        "alive": true,
+        "army": 0
+      },
+      {
+        "id": 106,
+        "mode": "peaceful",
+        "money": 100,
+        "alive": true,
+        "army": 100
+      },
+      {
+        "id": 107,
+        "mode": "peaceful",
+        "money": 100,
+        "alive": true,
+        "army": 100
+      },
+      {
+        "id": 108,
+        "mode": "peaceful",
+        "money": 0,
+        "alive": false,
+        "army": 0
+      },
+      {
+        "id": 109,
+        "mode": "peaceful",
+        "money": 100,
+        "alive": true,
+        "army": 100
+      },
+      {
+        "id": 110,
+        "mode": "peaceful",
+        "money": 0,
+        "alive": false,
+        "army": 0
+      },
+      {
+        "id": 111,
+        "mode": "peaceful",
+        "money": 100,
+        "alive": true,
+        "army": 100
+      }
+    ]
+  },
+  "rounds": [
+    {
+      "round": 0,
+      "battleResults": [
+        [
+          {
+            "id": 100,
+            "isWinner": true,
+            "isAttacker": true,
+            "lockedMoney": 100
+          },
+          {
+            "id": 110,
+            "isWinner": false,
+            "isAttacker": false,
+            "lockedMoney": 100
+          }
+        ],
+        [
+          {
+            "id": 101,
+            "isWinner": false,
+            "isAttacker": true,
+            "lockedMoney": 100
+          },
+          {
+            "id": 107,
+            "isWinner": true,
+            "isAttacker": false,
+            "lockedMoney": 100
+          }
+        ],
+        [
+          {
+            "id": 102,
+            "isWinner": false,
+            "isAttacker": true,
+            "lockedMoney": 100
+          },
+          {
+            "id": 105,
+            "isWinner": true,
+            "isAttacker": false,
+            "lockedMoney": 100
+          }
+        ],
+        [
+          {
+            "id": 103,
+            "isWinner": false,
+            "isAttacker": true,
+            "lockedMoney": 100
+          },
+          {
+            "id": 111,
+            "isWinner": true,
+            "isAttacker": false,
+            "lockedMoney": 100
+          }
+        ],
+        [
+          {
+            "id": 104,
+            "isWinner": false,
+            "isAttacker": true,
+            "lockedMoney": 100
+          },
+          {
+            "id": 100,
+            "isWinner": true,
+            "isAttacker": false,
+            "lockedMoney": 100
+          }
+        ],
+        [
+          {
+            "id": 105,
+            "isWinner": false,
+            "isAttacker": true,
+            "lockedMoney": 100
+          },
+          {
+            "id": 103,
+            "isWinner": true,
+            "isAttacker": false,
+            "lockedMoney": 100
+          }
+        ]
+      ],
+      "kingdoms": [
+        {
+          "id": 100,
+          "mode": "aggressive",
+          "money": 300,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 101,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 102,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 103,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 104,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 105,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 106,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 107,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 108,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 109,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 110,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 111,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        }
+      ]
+    },
+    {
+      "round": 1,
+      "battleResults": [
+        [
+          {
+            "id": 100,
+            "isWinner": true,
+            "isAttacker": true,
+            "lockedMoney": 200
+          },
+          {
+            "id": 108,
+            "isWinner": false,
+            "isAttacker": false,
+            "lockedMoney": 100
+          }
+        ]
+      ],
+      "kingdoms": [
+        {
+          "id": 100,
+          "mode": "aggressive",
+          "money": 300,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 101,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 102,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 103,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 104,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 105,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 106,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 107,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 108,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 109,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 110,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 111,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "battleResults": [
+        [
+          {
+            "id": 100,
+            "isWinner": false,
+            "isAttacker": true,
+            "lockedMoney": 300
+          },
+          {
+            "id": 111,
+            "isWinner": true,
+            "isAttacker": false,
+            "lockedMoney": 100
+          }
+        ]
+      ],
+      "kingdoms": [
+        {
+          "id": 100,
+          "mode": "aggressive",
+          "money": 300,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 101,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 102,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 103,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 104,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 105,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 106,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 107,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 108,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 109,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 110,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 111,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "battleResults": [],
+      "kingdoms": [
+        {
+          "id": 100,
+          "mode": "aggressive",
+          "money": 300,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 101,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 102,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 103,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 104,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 105,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 106,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 107,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 108,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 109,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 110,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 111,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        }
+      ]
+    },
+    {
+      "round": 4,
+      "battleResults": [],
+      "kingdoms": [
+        {
+          "id": 100,
+          "mode": "aggressive",
+          "money": 300,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 101,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 102,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 103,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 104,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 105,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 106,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 107,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 108,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 109,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 110,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 111,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        }
+      ]
+    },
+    {
+      "round": 5,
+      "battleResults": [],
+      "kingdoms": [
+        {
+          "id": 100,
+          "mode": "aggressive",
+          "money": 300,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 101,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 102,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 103,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 104,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 105,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 106,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 107,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 108,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 109,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 110,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 111,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        }
+      ]
+    },
+    {
+      "round": 6,
+      "battleResults": [],
+      "kingdoms": [
+        {
+          "id": 100,
+          "mode": "aggressive",
+          "money": 300,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 101,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 102,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 103,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 104,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 105,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 106,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 107,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 108,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 109,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 110,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 111,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        }
+      ]
+    },
+    {
+      "round": 7,
+      "battleResults": [],
+      "kingdoms": [
+        {
+          "id": 100,
+          "mode": "aggressive",
+          "money": 300,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 101,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 102,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 103,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 104,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 105,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 106,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 107,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 108,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 109,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 110,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 111,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        }
+      ]
+    },
+    {
+      "round": 8,
+      "battleResults": [],
+      "kingdoms": [
+        {
+          "id": 100,
+          "mode": "aggressive",
+          "money": 300,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 101,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 102,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 103,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 104,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 105,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 106,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 107,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 108,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 109,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 110,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 111,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        }
+      ]
+    },
+    {
+      "round": 9,
+      "battleResults": [],
+      "kingdoms": [
+        {
+          "id": 100,
+          "mode": "aggressive",
+          "money": 300,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 101,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 102,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 103,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 104,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 105,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 106,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 107,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 108,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 109,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 110,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 111,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        }
+      ]
+    }
+  ]
+}{
+  "initialValues": {
+    "date": "2018-03-24T02:40:14.080Z",
+    "startParams": {
+      "aggressiveKingdoms": 6,
+      "peacefulKingdoms": 6,
+      "rounds": 10,
+      "startMoney": 100,
+      "startArmy": 100
+    },
+    "kingdoms": [
+      {
+        "id": 100,
+        "mode": "aggressive",
+        "money": 0,
+        "alive": false,
+        "army": 0
+      },
+      {
+        "id": 101,
+        "mode": "aggressive",
+        "money": 0,
+        "alive": false,
+        "army": 0
+      },
+      {
+        "id": 102,
+        "mode": "aggressive",
+        "money": 100,
+        "alive": true,
+        "army": 0
+      },
+      {
+        "id": 103,
+        "mode": "aggressive",
+        "money": 400,
+        "alive": true,
+        "army": 0
+      },
+      {
+        "id": 104,
+        "mode": "aggressive",
+        "money": 100,
+        "alive": true,
+        "army": 0
+      },
+      {
+        "id": 105,
+        "mode": "aggressive",
+        "money": 100,
+        "alive": true,
+        "army": 0
+      },
+      {
+        "id": 106,
+        "mode": "peaceful",
+        "money": 100,
+        "alive": true,
+        "army": 100
+      },
+      {
+        "id": 107,
+        "mode": "peaceful",
+        "money": 100,
+        "alive": true,
+        "army": 100
+      },
+      {
+        "id": 108,
+        "mode": "peaceful",
+        "money": 0,
+        "alive": false,
+        "army": 0
+      },
+      {
+        "id": 109,
+        "mode": "peaceful",
+        "money": 100,
+        "alive": true,
+        "army": 100
+      },
+      {
+        "id": 110,
+        "mode": "peaceful",
+        "money": 100,
+        "alive": true,
+        "army": 100
+      },
+      {
+        "id": 111,
+        "mode": "peaceful",
+        "money": 100,
+        "alive": true,
+        "army": 100
+      }
+    ]
+  },
+  "rounds": [
+    {
+      "round": 0,
+      "battleResults": [
+        [
+          {
+            "id": 100,
+            "isWinner": false,
+            "isAttacker": true,
+            "lockedMoney": 100
+          },
+          {
+            "id": 111,
+            "isWinner": true,
+            "isAttacker": false,
+            "lockedMoney": 100
+          }
+        ],
+        [
+          {
+            "id": 101,
+            "isWinner": false,
+            "isAttacker": true,
+            "lockedMoney": 100
+          },
+          {
+            "id": 107,
+            "isWinner": true,
+            "isAttacker": false,
+            "lockedMoney": 100
+          }
+        ],
+        [
+          {
+            "id": 102,
+            "isWinner": false,
+            "isAttacker": true,
+            "lockedMoney": 100
+          },
+          {
+            "id": 100,
+            "isWinner": true,
+            "isAttacker": false,
+            "lockedMoney": 100
+          }
+        ],
+        [
+          {
+            "id": 103,
+            "isWinner": true,
+            "isAttacker": true,
+            "lockedMoney": 100
+          },
+          {
+            "id": 105,
+            "isWinner": false,
+            "isAttacker": false,
+            "lockedMoney": 100
+          }
+        ],
+        [
+          {
+            "id": 104,
+            "isWinner": true,
+            "isAttacker": true,
+            "lockedMoney": 100
+          },
+          {
+            "id": 101,
+            "isWinner": false,
+            "isAttacker": false,
+            "lockedMoney": 100
+          }
+        ],
+        [
+          {
+            "id": 105,
+            "isWinner": true,
+            "isAttacker": true,
+            "lockedMoney": 100
+          },
+          {
+            "id": 108,
+            "isWinner": false,
+            "isAttacker": false,
+            "lockedMoney": 100
+          }
+        ]
+      ],
+      "kingdoms": [
+        {
+          "id": 100,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 101,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 102,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 103,
+          "mode": "aggressive",
+          "money": 400,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 104,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 105,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 106,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 107,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 108,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 109,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 110,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 111,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        }
+      ]
+    },
+    {
+      "round": 1,
+      "battleResults": [
+        [
+          {
+            "id": 103,
+            "isWinner": true,
+            "isAttacker": true,
+            "lockedMoney": 200
+          },
+          {
+            "id": 104,
+            "isWinner": false,
+            "isAttacker": false,
+            "lockedMoney": 200
+          }
+        ],
+        [
+          {
+            "id": 104,
+            "isWinner": true,
+            "isAttacker": true,
+            "lockedMoney": 200
+          },
+          {
+            "id": 105,
+            "isWinner": false,
+            "isAttacker": false,
+            "lockedMoney": 100
+          }
+        ],
+        [
+          {
+            "id": 105,
+            "isWinner": true,
+            "isAttacker": true,
+            "lockedMoney": 100
+          },
+          {
+            "id": 100,
+            "isWinner": false,
+            "isAttacker": false,
+            "lockedMoney": 100
+          }
+        ]
+      ],
+      "kingdoms": [
+        {
+          "id": 100,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 101,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 102,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 103,
+          "mode": "aggressive",
+          "money": 400,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 104,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 105,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 106,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 107,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 108,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 109,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 110,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 111,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "battleResults": [
+        [
+          {
+            "id": 103,
+            "isWinner": false,
+            "isAttacker": true,
+            "lockedMoney": 400
+          },
+          {
+            "id": 104,
+            "isWinner": false,
+            "isAttacker": true,
+            "lockedMoney": 100
+          },
+          {
+            "id": 110,
+            "isWinner": true,
+            "isAttacker": false,
+            "lockedMoney": 100
+          }
+        ],
+        [
+          {
+            "id": 105,
+            "isWinner": false,
+            "isAttacker": true,
+            "lockedMoney": 100
+          },
+          {
+            "id": 111,
+            "isWinner": true,
+            "isAttacker": false,
+            "lockedMoney": 100
+          }
+        ]
+      ],
+      "kingdoms": [
+        {
+          "id": 100,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 101,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 102,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 103,
+          "mode": "aggressive",
+          "money": 400,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 104,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 105,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 106,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 107,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 108,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 109,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 110,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 111,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "battleResults": [],
+      "kingdoms": [
+        {
+          "id": 100,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 101,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 102,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 103,
+          "mode": "aggressive",
+          "money": 400,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 104,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 105,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 106,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 107,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 108,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 109,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 110,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 111,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        }
+      ]
+    },
+    {
+      "round": 4,
+      "battleResults": [],
+      "kingdoms": [
+        {
+          "id": 100,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 101,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 102,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 103,
+          "mode": "aggressive",
+          "money": 400,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 104,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 105,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 106,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 107,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 108,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 109,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 110,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 111,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        }
+      ]
+    },
+    {
+      "round": 5,
+      "battleResults": [],
+      "kingdoms": [
+        {
+          "id": 100,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 101,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 102,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 103,
+          "mode": "aggressive",
+          "money": 400,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 104,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 105,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 106,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 107,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 108,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 109,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 110,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 111,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        }
+      ]
+    },
+    {
+      "round": 6,
+      "battleResults": [],
+      "kingdoms": [
+        {
+          "id": 100,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 101,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 102,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 103,
+          "mode": "aggressive",
+          "money": 400,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 104,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 105,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 106,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 107,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 108,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 109,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 110,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 111,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        }
+      ]
+    },
+    {
+      "round": 7,
+      "battleResults": [],
+      "kingdoms": [
+        {
+          "id": 100,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 101,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 102,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 103,
+          "mode": "aggressive",
+          "money": 400,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 104,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 105,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 106,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 107,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 108,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 109,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 110,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 111,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        }
+      ]
+    },
+    {
+      "round": 8,
+      "battleResults": [],
+      "kingdoms": [
+        {
+          "id": 100,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 101,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 102,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 103,
+          "mode": "aggressive",
+          "money": 400,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 104,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 105,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 106,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 107,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 108,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 109,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 110,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 111,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        }
+      ]
+    },
+    {
+      "round": 9,
+      "battleResults": [],
+      "kingdoms": [
+        {
+          "id": 100,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 101,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 102,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 103,
+          "mode": "aggressive",
+          "money": 400,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 104,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 105,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 106,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 107,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 108,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 109,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 110,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 111,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        }
+      ]
+    }
+  ]
+}{
+  "initialValues": {
+    "date": "2018-03-24T02:40:15.346Z",
+    "startParams": {
+      "aggressiveKingdoms": 6,
+      "peacefulKingdoms": 6,
+      "rounds": 10,
+      "startMoney": 100,
+      "startArmy": 100
+    },
+    "kingdoms": [
+      {
+        "id": 100,
+        "mode": "aggressive",
+        "money": 100,
+        "alive": true,
+        "army": 0
+      },
+      {
+        "id": 101,
+        "mode": "aggressive",
+        "money": 100,
+        "alive": true,
+        "army": 0
+      },
+      {
+        "id": 102,
+        "mode": "aggressive",
+        "money": 200,
+        "alive": true,
+        "army": 0
+      },
+      {
+        "id": 103,
+        "mode": "aggressive",
+        "money": 100,
+        "alive": true,
+        "army": 0
+      },
+      {
+        "id": 104,
+        "mode": "aggressive",
+        "money": 0,
+        "alive": false,
+        "army": 0
+      },
+      {
+        "id": 105,
+        "mode": "aggressive",
+        "money": 200,
+        "alive": true,
+        "army": 0
+      },
+      {
+        "id": 106,
+        "mode": "peaceful",
+        "money": 0,
+        "alive": false,
+        "army": 0
+      },
+      {
+        "id": 107,
+        "mode": "peaceful",
+        "money": 100,
+        "alive": true,
+        "army": 100
+      },
+      {
+        "id": 108,
+        "mode": "peaceful",
+        "money": 100,
+        "alive": true,
+        "army": 100
+      },
+      {
+        "id": 109,
+        "mode": "peaceful",
+        "money": 100,
+        "alive": true,
+        "army": 100
+      },
+      {
+        "id": 110,
+        "mode": "peaceful",
+        "money": 100,
+        "alive": true,
+        "army": 100
+      },
+      {
+        "id": 111,
+        "mode": "peaceful",
+        "money": 100,
+        "alive": true,
+        "army": 100
+      }
+    ]
+  },
+  "rounds": [
+    {
+      "round": 0,
+      "battleResults": [
+        [
+          {
+            "id": 100,
+            "isWinner": false,
+            "isAttacker": true,
+            "lockedMoney": 100
+          },
+          {
+            "id": 102,
+            "isWinner": true,
+            "isAttacker": false,
+            "lockedMoney": 100
+          }
+        ],
+        [
+          {
+            "id": 101,
+            "isWinner": false,
+            "isAttacker": true,
+            "lockedMoney": 100
+          },
+          {
+            "id": 109,
+            "isWinner": true,
+            "isAttacker": false,
+            "lockedMoney": 100
+          }
+        ],
+        [
+          {
+            "id": 102,
+            "isWinner": true,
+            "isAttacker": true,
+            "lockedMoney": 100
+          },
+          {
+            "id": 106,
+            "isWinner": false,
+            "isAttacker": false,
+            "lockedMoney": 100
+          }
+        ],
+        [
+          {
+            "id": 103,
+            "isWinner": false,
+            "isAttacker": true,
+            "lockedMoney": 100
+          },
+          {
+            "id": 105,
+            "isWinner": true,
+            "isAttacker": true,
+            "lockedMoney": 100
+          },
+          {
+            "id": 104,
+            "isWinner": false,
+            "isAttacker": false,
+            "lockedMoney": 100
+          }
+        ],
+        [
+          {
+            "id": 104,
+            "isWinner": false,
+            "isAttacker": true,
+            "lockedMoney": 100
+          },
+          {
+            "id": 100,
+            "isWinner": true,
+            "isAttacker": false,
+            "lockedMoney": 100
+          }
+        ]
+      ],
+      "kingdoms": [
+        {
+          "id": 100,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 101,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 102,
+          "mode": "aggressive",
+          "money": 200,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 103,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 104,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 105,
+          "mode": "aggressive",
+          "money": 200,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 106,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 107,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 108,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 109,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 110,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 111,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        }
+      ]
+    },
+    {
+      "round": 1,
+      "battleResults": [
+        [
+          {
+            "id": 102,
+            "isWinner": false,
+            "isAttacker": true,
+            "lockedMoney": 200
+          },
+          {
+            "id": 108,
+            "isWinner": true,
+            "isAttacker": false,
+            "lockedMoney": 100
+          }
+        ],
+        [
+          {
+            "id": 105,
+            "isWinner": false,
+            "isAttacker": true,
+            "lockedMoney": 200
+          },
+          {
+            "id": 109,
+            "isWinner": true,
+            "isAttacker": false,
+            "lockedMoney": 100
+          }
+        ]
+      ],
+      "kingdoms": [
+        {
+          "id": 100,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 101,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 102,
+          "mode": "aggressive",
+          "money": 200,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 103,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 104,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 105,
+          "mode": "aggressive",
+          "money": 200,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 106,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 107,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 108,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 109,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 110,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 111,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "battleResults": [],
+      "kingdoms": [
+        {
+          "id": 100,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 101,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 102,
+          "mode": "aggressive",
+          "money": 200,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 103,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 104,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 105,
+          "mode": "aggressive",
+          "money": 200,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 106,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 107,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 108,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 109,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 110,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 111,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "battleResults": [],
+      "kingdoms": [
+        {
+          "id": 100,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 101,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 102,
+          "mode": "aggressive",
+          "money": 200,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 103,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 104,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 105,
+          "mode": "aggressive",
+          "money": 200,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 106,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 107,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 108,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 109,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 110,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 111,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        }
+      ]
+    },
+    {
+      "round": 4,
+      "battleResults": [],
+      "kingdoms": [
+        {
+          "id": 100,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 101,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 102,
+          "mode": "aggressive",
+          "money": 200,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 103,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 104,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 105,
+          "mode": "aggressive",
+          "money": 200,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 106,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 107,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 108,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 109,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 110,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 111,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        }
+      ]
+    },
+    {
+      "round": 5,
+      "battleResults": [],
+      "kingdoms": [
+        {
+          "id": 100,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 101,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 102,
+          "mode": "aggressive",
+          "money": 200,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 103,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 104,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 105,
+          "mode": "aggressive",
+          "money": 200,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 106,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 107,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 108,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 109,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 110,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 111,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        }
+      ]
+    },
+    {
+      "round": 6,
+      "battleResults": [],
+      "kingdoms": [
+        {
+          "id": 100,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 101,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 102,
+          "mode": "aggressive",
+          "money": 200,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 103,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 104,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 105,
+          "mode": "aggressive",
+          "money": 200,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 106,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 107,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 108,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 109,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 110,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 111,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        }
+      ]
+    },
+    {
+      "round": 7,
+      "battleResults": [],
+      "kingdoms": [
+        {
+          "id": 100,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 101,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 102,
+          "mode": "aggressive",
+          "money": 200,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 103,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 104,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 105,
+          "mode": "aggressive",
+          "money": 200,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 106,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 107,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 108,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 109,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 110,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 111,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        }
+      ]
+    },
+    {
+      "round": 8,
+      "battleResults": [],
+      "kingdoms": [
+        {
+          "id": 100,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 101,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 102,
+          "mode": "aggressive",
+          "money": 200,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 103,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 104,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 105,
+          "mode": "aggressive",
+          "money": 200,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 106,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 107,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 108,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 109,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 110,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 111,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        }
+      ]
+    },
+    {
+      "round": 9,
+      "battleResults": [],
+      "kingdoms": [
+        {
+          "id": 100,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 101,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 102,
+          "mode": "aggressive",
+          "money": 200,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 103,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 104,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 105,
+          "mode": "aggressive",
+          "money": 200,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 106,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 107,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 108,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 109,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 110,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 111,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        }
+      ]
+    }
+  ]
+}{
+  "initialValues": {
+    "date": "2018-03-24T02:40:14.502Z",
+    "startParams": {
+      "aggressiveKingdoms": 6,
+      "peacefulKingdoms": 6,
+      "rounds": 10,
+      "startMoney": 100,
+      "startArmy": 100
+    },
+    "kingdoms": [
+      {
+        "id": 100,
+        "mode": "aggressive",
+        "money": 100,
+        "alive": true,
+        "army": 0
+      },
+      {
+        "id": 101,
+        "mode": "aggressive",
+        "money": 200,
+        "alive": true,
+        "army": 0
+      },
+      {
+        "id": 102,
+        "mode": "aggressive",
+        "money": 100,
+        "alive": true,
+        "army": 0
+      },
+      {
+        "id": 103,
+        "mode": "aggressive",
+        "money": 0,
+        "alive": false,
+        "army": 0
+      },
+      {
+        "id": 104,
+        "mode": "aggressive",
+        "money": 0,
+        "alive": false,
+        "army": 0
+      },
+      {
+        "id": 105,
+        "mode": "aggressive",
+        "money": 400,
+        "alive": true,
+        "army": 0
+      },
+      {
+        "id": 106,
+        "mode": "peaceful",
+        "money": 100,
+        "alive": true,
+        "army": 100
+      },
+      {
+        "id": 107,
+        "mode": "peaceful",
+        "money": 0,
+        "alive": false,
+        "army": 0
+      },
+      {
+        "id": 108,
+        "mode": "peaceful",
+        "money": 0,
+        "alive": false,
+        "army": 0
+      },
+      {
+        "id": 109,
+        "mode": "peaceful",
+        "money": 100,
+        "alive": true,
+        "army": 100
+      },
+      {
+        "id": 110,
+        "mode": "peaceful",
+        "money": 100,
+        "alive": true,
+        "army": 100
+      },
+      {
+        "id": 111,
+        "mode": "peaceful",
+        "money": 100,
+        "alive": true,
+        "army": 100
+      }
+    ]
+  },
+  "rounds": [
+    {
+      "round": 0,
+      "battleResults": [
+        [
+          {
+            "id": 100,
+            "isWinner": false,
+            "isAttacker": true,
+            "lockedMoney": 100
+          },
+          {
+            "id": 104,
+            "isWinner": true,
+            "isAttacker": false,
+            "lockedMoney": 100
+          }
+        ],
+        [
+          {
+            "id": 101,
+            "isWinner": true,
+            "isAttacker": true,
+            "lockedMoney": 100
+          },
+          {
+            "id": 108,
+            "isWinner": false,
+            "isAttacker": false,
+            "lockedMoney": 100
+          }
+        ],
+        [
+          {
+            "id": 102,
+            "isWinner": false,
+            "isAttacker": true,
+            "lockedMoney": 100
+          },
+          {
+            "id": 109,
+            "isWinner": true,
+            "isAttacker": false,
+            "lockedMoney": 100
+          }
+        ],
+        [
+          {
+            "id": 103,
+            "isWinner": false,
+            "isAttacker": true,
+            "lockedMoney": 100
+          },
+          {
+            "id": 102,
+            "isWinner": true,
+            "isAttacker": false,
+            "lockedMoney": 100
+          }
+        ],
+        [
+          {
+            "id": 104,
+            "isWinner": false,
+            "isAttacker": true,
+            "lockedMoney": 100
+          },
+          {
+            "id": 106,
+            "isWinner": true,
+            "isAttacker": false,
+            "lockedMoney": 100
+          }
+        ],
+        [
+          {
+            "id": 105,
+            "isWinner": true,
+            "isAttacker": true,
+            "lockedMoney": 100
+          },
+          {
+            "id": 107,
+            "isWinner": false,
+            "isAttacker": false,
+            "lockedMoney": 100
+          }
+        ]
+      ],
+      "kingdoms": [
+        {
+          "id": 100,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 101,
+          "mode": "aggressive",
+          "money": 200,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 102,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 103,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 104,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 105,
+          "mode": "aggressive",
+          "money": 400,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 106,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 107,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 108,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 109,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 110,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 111,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        }
+      ]
+    },
+    {
+      "round": 1,
+      "battleResults": [
+        [
+          {
+            "id": 101,
+            "isWinner": false,
+            "isAttacker": true,
+            "lockedMoney": 200
+          },
+          {
+            "id": 110,
+            "isWinner": true,
+            "isAttacker": false,
+            "lockedMoney": 100
+          }
+        ],
+        [
+          {
+            "id": 105,
+            "isWinner": true,
+            "isAttacker": true,
+            "lockedMoney": 200
+          },
+          {
+            "id": 103,
+            "isWinner": false,
+            "isAttacker": false,
+            "lockedMoney": 100
+          }
+        ]
+      ],
+      "kingdoms": [
+        {
+          "id": 100,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 101,
+          "mode": "aggressive",
+          "money": 200,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 102,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 103,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 104,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 105,
+          "mode": "aggressive",
+          "money": 400,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 106,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 107,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 108,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 109,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 110,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 111,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "battleResults": [
+        [
+          {
+            "id": 105,
+            "isWinner": true,
+            "isAttacker": true,
+            "lockedMoney": 300
+          },
+          {
+            "id": 104,
+            "isWinner": false,
+            "isAttacker": false,
+            "lockedMoney": 100
+          }
+        ]
+      ],
+      "kingdoms": [
+        {
+          "id": 100,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 101,
+          "mode": "aggressive",
+          "money": 200,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 102,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 103,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 104,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 105,
+          "mode": "aggressive",
+          "money": 400,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 106,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 107,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 108,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 109,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 110,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 111,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "battleResults": [
+        [
+          {
+            "id": 105,
+            "isWinner": false,
+            "isAttacker": true,
+            "lockedMoney": 400
+          },
+          {
+            "id": 110,
+            "isWinner": true,
+            "isAttacker": false,
+            "lockedMoney": 100
+          }
+        ]
+      ],
+      "kingdoms": [
+        {
+          "id": 100,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 101,
+          "mode": "aggressive",
+          "money": 200,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 102,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 103,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 104,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 105,
+          "mode": "aggressive",
+          "money": 400,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 106,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 107,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 108,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 109,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 110,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 111,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        }
+      ]
+    },
+    {
+      "round": 4,
+      "battleResults": [],
+      "kingdoms": [
+        {
+          "id": 100,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 101,
+          "mode": "aggressive",
+          "money": 200,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 102,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 103,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 104,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 105,
+          "mode": "aggressive",
+          "money": 400,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 106,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 107,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 108,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 109,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 110,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 111,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        }
+      ]
+    },
+    {
+      "round": 5,
+      "battleResults": [],
+      "kingdoms": [
+        {
+          "id": 100,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 101,
+          "mode": "aggressive",
+          "money": 200,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 102,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 103,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 104,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 105,
+          "mode": "aggressive",
+          "money": 400,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 106,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 107,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 108,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 109,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 110,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 111,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        }
+      ]
+    },
+    {
+      "round": 6,
+      "battleResults": [],
+      "kingdoms": [
+        {
+          "id": 100,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 101,
+          "mode": "aggressive",
+          "money": 200,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 102,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 103,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 104,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 105,
+          "mode": "aggressive",
+          "money": 400,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 106,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 107,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 108,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 109,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 110,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 111,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        }
+      ]
+    },
+    {
+      "round": 7,
+      "battleResults": [],
+      "kingdoms": [
+        {
+          "id": 100,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 101,
+          "mode": "aggressive",
+          "money": 200,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 102,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 103,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 104,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 105,
+          "mode": "aggressive",
+          "money": 400,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 106,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 107,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 108,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 109,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 110,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 111,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        }
+      ]
+    },
+    {
+      "round": 8,
+      "battleResults": [],
+      "kingdoms": [
+        {
+          "id": 100,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 101,
+          "mode": "aggressive",
+          "money": 200,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 102,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 103,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 104,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 105,
+          "mode": "aggressive",
+          "money": 400,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 106,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 107,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 108,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 109,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 110,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 111,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        }
+      ]
+    },
+    {
+      "round": 9,
+      "battleResults": [],
+      "kingdoms": [
+        {
+          "id": 100,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 101,
+          "mode": "aggressive",
+          "money": 200,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 102,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 103,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 104,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 105,
+          "mode": "aggressive",
+          "money": 400,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 106,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 107,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 108,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 109,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 110,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 111,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        }
+      ]
+    }
+  ]
+}{
+  "initialValues": {
+    "date": "2018-03-24T02:40:15.768Z",
+    "startParams": {
+      "aggressiveKingdoms": 6,
+      "peacefulKingdoms": 6,
+      "rounds": 10,
+      "startMoney": 100,
+      "startArmy": 100
+    },
+    "kingdoms": [
+      {
+        "id": 100,
+        "mode": "aggressive",
+        "money": 400,
+        "alive": true,
+        "army": 0
+      },
+      {
+        "id": 101,
+        "mode": "aggressive",
+        "money": 0,
+        "alive": false,
+        "army": 0
+      },
+      {
+        "id": 102,
+        "mode": "aggressive",
+        "money": 0,
+        "alive": false,
+        "army": 0
+      },
+      {
+        "id": 103,
+        "mode": "aggressive",
+        "money": 500,
+        "alive": true,
+        "army": 0
+      },
+      {
+        "id": 104,
+        "mode": "aggressive",
+        "money": 0,
+        "alive": false,
+        "army": 0
+      },
+      {
+        "id": 105,
+        "mode": "aggressive",
+        "money": 0,
+        "alive": false,
+        "army": 0
+      },
+      {
+        "id": 106,
+        "mode": "peaceful",
+        "money": 0,
+        "alive": false,
+        "army": 0
+      },
+      {
+        "id": 107,
+        "mode": "peaceful",
+        "money": 0,
+        "alive": false,
+        "army": 0
+      },
+      {
+        "id": 108,
+        "mode": "peaceful",
+        "money": 100,
+        "alive": true,
+        "army": 100
+      },
+      {
+        "id": 109,
+        "mode": "peaceful",
+        "money": 100,
+        "alive": true,
+        "army": 100
+      },
+      {
+        "id": 110,
+        "mode": "peaceful",
+        "money": 100,
+        "alive": true,
+        "army": 100
+      },
+      {
+        "id": 111,
+        "mode": "peaceful",
+        "money": 0,
+        "alive": false,
+        "army": 0
+      }
+    ]
+  },
+  "rounds": [
+    {
+      "round": 0,
+      "battleResults": [
+        [
+          {
+            "id": 100,
+            "isWinner": true,
+            "isAttacker": true,
+            "lockedMoney": 100
+          },
+          {
+            "id": 102,
+            "isWinner": false,
+            "isAttacker": true,
+            "lockedMoney": 100
+          },
+          {
+            "id": 107,
+            "isWinner": false,
+            "isAttacker": false,
+            "lockedMoney": 100
+          }
+        ],
+        [
+          {
+            "id": 101,
+            "isWinner": false,
+            "isAttacker": true,
+            "lockedMoney": 100
+          },
+          {
+            "id": 103,
+            "isWinner": true,
+            "isAttacker": true,
+            "lockedMoney": 100
+          },
+          {
+            "id": 102,
+            "isWinner": false,
+            "isAttacker": false,
+            "lockedMoney": 100
+          }
+        ],
+        [
+          {
+            "id": 104,
+            "isWinner": false,
+            "isAttacker": true,
+            "lockedMoney": 100
+          },
+          {
+            "id": 101,
+            "isWinner": true,
+            "isAttacker": false,
+            "lockedMoney": 100
+          }
+        ],
+        [
+          {
+            "id": 105,
+            "isWinner": false,
+            "isAttacker": true,
+            "lockedMoney": 100
+          },
+          {
+            "id": 100,
+            "isWinner": true,
+            "isAttacker": false,
+            "lockedMoney": 100
+          }
+        ]
+      ],
+      "kingdoms": [
+        {
+          "id": 100,
+          "mode": "aggressive",
+          "money": 400,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 101,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 102,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 103,
+          "mode": "aggressive",
+          "money": 500,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 104,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 105,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 106,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 107,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 108,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 109,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 110,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 111,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        }
+      ]
+    },
+    {
+      "round": 1,
+      "battleResults": [
+        [
+          {
+            "id": 100,
+            "isWinner": true,
+            "isAttacker": true,
+            "lockedMoney": 200
+          },
+          {
+            "id": 106,
+            "isWinner": false,
+            "isAttacker": false,
+            "lockedMoney": 100
+          }
+        ],
+        [
+          {
+            "id": 103,
+            "isWinner": true,
+            "isAttacker": true,
+            "lockedMoney": 200
+          },
+          {
+            "id": 104,
+            "isWinner": false,
+            "isAttacker": false,
+            "lockedMoney": 100
+          }
+        ]
+      ],
+      "kingdoms": [
+        {
+          "id": 100,
+          "mode": "aggressive",
+          "money": 400,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 101,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 102,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 103,
+          "mode": "aggressive",
+          "money": 500,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 104,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 105,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 106,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 107,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 108,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 109,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 110,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 111,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "battleResults": [
+        [
+          {
+            "id": 100,
+            "isWinner": true,
+            "isAttacker": true,
+            "lockedMoney": 300
+          },
+          {
+            "id": 101,
+            "isWinner": false,
+            "isAttacker": false,
+            "lockedMoney": 100
+          }
+        ],
+        [
+          {
+            "id": 103,
+            "isWinner": true,
+            "isAttacker": true,
+            "lockedMoney": 300
+          },
+          {
+            "id": 105,
+            "isWinner": false,
+            "isAttacker": false,
+            "lockedMoney": 100
+          }
+        ]
+      ],
+      "kingdoms": [
+        {
+          "id": 100,
+          "mode": "aggressive",
+          "money": 400,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 101,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 102,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 103,
+          "mode": "aggressive",
+          "money": 500,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 104,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 105,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 106,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 107,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 108,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 109,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 110,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 111,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "battleResults": [
+        [
+          {
+            "id": 100,
+            "isWinner": false,
+            "isAttacker": true,
+            "lockedMoney": 400
+          },
+          {
+            "id": 110,
+            "isWinner": true,
+            "isAttacker": false,
+            "lockedMoney": 100
+          }
+        ],
+        [
+          {
+            "id": 103,
+            "isWinner": true,
+            "isAttacker": true,
+            "lockedMoney": 400
+          },
+          {
+            "id": 111,
+            "isWinner": false,
+            "isAttacker": false,
+            "lockedMoney": 100
+          }
+        ]
+      ],
+      "kingdoms": [
+        {
+          "id": 100,
+          "mode": "aggressive",
+          "money": 400,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 101,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 102,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 103,
+          "mode": "aggressive",
+          "money": 500,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 104,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 105,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 106,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 107,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 108,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 109,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 110,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 111,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        }
+      ]
+    },
+    {
+      "round": 4,
+      "battleResults": [
+        [
+          {
+            "id": 103,
+            "isWinner": false,
+            "isAttacker": true,
+            "lockedMoney": 500
+          },
+          {
+            "id": 110,
+            "isWinner": true,
+            "isAttacker": false,
+            "lockedMoney": 100
+          }
+        ]
+      ],
+      "kingdoms": [
+        {
+          "id": 100,
+          "mode": "aggressive",
+          "money": 400,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 101,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 102,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 103,
+          "mode": "aggressive",
+          "money": 500,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 104,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 105,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 106,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 107,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 108,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 109,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 110,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 111,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        }
+      ]
+    },
+    {
+      "round": 5,
+      "battleResults": [],
+      "kingdoms": [
+        {
+          "id": 100,
+          "mode": "aggressive",
+          "money": 400,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 101,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 102,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 103,
+          "mode": "aggressive",
+          "money": 500,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 104,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 105,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 106,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 107,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 108,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 109,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 110,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 111,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        }
+      ]
+    },
+    {
+      "round": 6,
+      "battleResults": [],
+      "kingdoms": [
+        {
+          "id": 100,
+          "mode": "aggressive",
+          "money": 400,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 101,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 102,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 103,
+          "mode": "aggressive",
+          "money": 500,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 104,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 105,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 106,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 107,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 108,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 109,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 110,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 111,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        }
+      ]
+    },
+    {
+      "round": 7,
+      "battleResults": [],
+      "kingdoms": [
+        {
+          "id": 100,
+          "mode": "aggressive",
+          "money": 400,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 101,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 102,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 103,
+          "mode": "aggressive",
+          "money": 500,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 104,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 105,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 106,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 107,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 108,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 109,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 110,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 111,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        }
+      ]
+    },
+    {
+      "round": 8,
+      "battleResults": [],
+      "kingdoms": [
+        {
+          "id": 100,
+          "mode": "aggressive",
+          "money": 400,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 101,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 102,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 103,
+          "mode": "aggressive",
+          "money": 500,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 104,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 105,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 106,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 107,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 108,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 109,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 110,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 111,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        }
+      ]
+    },
+    {
+      "round": 9,
+      "battleResults": [],
+      "kingdoms": [
+        {
+          "id": 100,
+          "mode": "aggressive",
+          "money": 400,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 101,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 102,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 103,
+          "mode": "aggressive",
+          "money": 500,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 104,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 105,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 106,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 107,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 108,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 109,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 110,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 111,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        }
+      ]
+    }
+  ]
+}{}{
+  "initialValues": {
+    "date": "2018-03-24T02:40:14.940Z",
+    "startParams": {
+      "aggressiveKingdoms": 6,
+      "peacefulKingdoms": 6,
+      "rounds": 10,
+      "startMoney": 100,
+      "startArmy": 100
+    },
+    "kingdoms": [
+      {
+        "id": 100,
+        "mode": "aggressive",
+        "money": 0,
+        "alive": false,
+        "army": 0
+      },
+      {
+        "id": 101,
+        "mode": "aggressive",
+        "money": 100,
+        "alive": true,
+        "army": 0
+      },
+      {
+        "id": 102,
+        "mode": "aggressive",
+        "money": 0,
+        "alive": false,
+        "army": 0
+      },
+      {
+        "id": 103,
+        "mode": "aggressive",
+        "money": 700,
+        "alive": true,
+        "army": 0
+      },
+      {
+        "id": 104,
+        "mode": "aggressive",
+        "money": 0,
+        "alive": false,
+        "army": 0
+      },
+      {
+        "id": 105,
+        "mode": "aggressive",
+        "money": 200,
+        "alive": true,
+        "army": 0
+      },
+      {
+        "id": 106,
+        "mode": "peaceful",
+        "money": 0,
+        "alive": false,
+        "army": 0
+      },
+      {
+        "id": 107,
+        "mode": "peaceful",
+        "money": 0,
+        "alive": false,
+        "army": 0
+      },
+      {
+        "id": 108,
+        "mode": "peaceful",
+        "money": 100,
+        "alive": true,
+        "army": 100
+      },
+      {
+        "id": 109,
+        "mode": "peaceful",
+        "money": 0,
+        "alive": false,
+        "army": 0
+      },
+      {
+        "id": 110,
+        "mode": "peaceful",
+        "money": 0,
+        "alive": false,
+        "army": 0
+      },
+      {
+        "id": 111,
+        "mode": "peaceful",
+        "money": 100,
+        "alive": true,
+        "army": 100
+      }
+    ]
+  },
+  "rounds": [
+    {
+      "round": 0,
+      "battleResults": [
+        [
+          {
+            "id": 100,
+            "isWinner": false,
+            "isAttacker": true,
+            "lockedMoney": 100
+          },
+          {
+            "id": 102,
+            "isWinner": false,
+            "isAttacker": true,
+            "lockedMoney": 100
+          },
+          {
+            "id": 110,
+            "isWinner": true,
+            "isAttacker": false,
+            "lockedMoney": 100
+          }
+        ],
+        [
+          {
+            "id": 101,
+            "isWinner": true,
+            "isAttacker": true,
+            "lockedMoney": 100
+          },
+          {
+            "id": 107,
+            "isWinner": false,
+            "isAttacker": false,
+            "lockedMoney": 100
+          }
+        ],
+        [
+          {
+            "id": 103,
+            "isWinner": true,
+            "isAttacker": true,
+            "lockedMoney": 100
+          },
+          {
+            "id": 106,
+            "isWinner": false,
+            "isAttacker": false,
+            "lockedMoney": 100
+          }
+        ],
+        [
+          {
+            "id": 104,
+            "isWinner": true,
+            "isAttacker": true,
+            "lockedMoney": 100
+          },
+          {
+            "id": 109,
+            "isWinner": false,
+            "isAttacker": false,
+            "lockedMoney": 100
+          }
+        ],
+        [
+          {
+            "id": 105,
+            "isWinner": true,
+            "isAttacker": true,
+            "lockedMoney": 100
+          },
+          {
+            "id": 102,
+            "isWinner": false,
+            "isAttacker": false,
+            "lockedMoney": 100
+          }
+        ]
+      ],
+      "kingdoms": [
+        {
+          "id": 100,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 101,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 102,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 103,
+          "mode": "aggressive",
+          "money": 700,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 104,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 105,
+          "mode": "aggressive",
+          "money": 200,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 106,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 107,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 108,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 109,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 110,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 111,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        }
+      ]
+    },
+    {
+      "round": 1,
+      "battleResults": [
+        [
+          {
+            "id": 101,
+            "isWinner": true,
+            "isAttacker": true,
+            "lockedMoney": 200
+          },
+          {
+            "id": 100,
+            "isWinner": false,
+            "isAttacker": false,
+            "lockedMoney": 100
+          }
+        ],
+        [
+          {
+            "id": 103,
+            "isWinner": true,
+            "isAttacker": true,
+            "lockedMoney": 200
+          },
+          {
+            "id": 104,
+            "isWinner": false,
+            "isAttacker": false,
+            "lockedMoney": 200
+          }
+        ],
+        [
+          {
+            "id": 104,
+            "isWinner": false,
+            "isAttacker": true,
+            "lockedMoney": 200
+          },
+          {
+            "id": 101,
+            "isWinner": true,
+            "isAttacker": false,
+            "lockedMoney": 200
+          }
+        ],
+        [
+          {
+            "id": 105,
+            "isWinner": false,
+            "isAttacker": true,
+            "lockedMoney": 200
+          },
+          {
+            "id": 110,
+            "isWinner": true,
+            "isAttacker": false,
+            "lockedMoney": 100
+          }
+        ]
+      ],
+      "kingdoms": [
+        {
+          "id": 100,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 101,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 102,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 103,
+          "mode": "aggressive",
+          "money": 700,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 104,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 105,
+          "mode": "aggressive",
+          "money": 200,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 106,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 107,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 108,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 109,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 110,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 111,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "battleResults": [
+        [
+          {
+            "id": 101,
+            "isWinner": true,
+            "isAttacker": true,
+            "lockedMoney": 300
+          },
+          {
+            "id": 110,
+            "isWinner": false,
+            "isAttacker": false,
+            "lockedMoney": 100
+          }
+        ],
+        [
+          {
+            "id": 103,
+            "isWinner": true,
+            "isAttacker": true,
+            "lockedMoney": 400
+          },
+          {
+            "id": 101,
+            "isWinner": false,
+            "isAttacker": false,
+            "lockedMoney": 300
+          }
+        ]
+      ],
+      "kingdoms": [
+        {
+          "id": 100,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 101,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 102,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 103,
+          "mode": "aggressive",
+          "money": 700,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 104,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 105,
+          "mode": "aggressive",
+          "money": 200,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 106,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 107,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 108,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 109,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 110,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 111,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "battleResults": [
+        [
+          {
+            "id": 101,
+            "isWinner": false,
+            "isAttacker": true,
+            "lockedMoney": 100
+          },
+          {
+            "id": 111,
+            "isWinner": true,
+            "isAttacker": false,
+            "lockedMoney": 100
+          }
+        ],
+        [
+          {
+            "id": 103,
+            "isWinner": false,
+            "isAttacker": true,
+            "lockedMoney": 700
+          },
+          {
+            "id": 101,
+            "isWinner": true,
+            "isAttacker": false,
+            "lockedMoney": 100
+          }
+        ]
+      ],
+      "kingdoms": [
+        {
+          "id": 100,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 101,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 102,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 103,
+          "mode": "aggressive",
+          "money": 700,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 104,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 105,
+          "mode": "aggressive",
+          "money": 200,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 106,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 107,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 108,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 109,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 110,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 111,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        }
+      ]
+    },
+    {
+      "round": 4,
+      "battleResults": [],
+      "kingdoms": [
+        {
+          "id": 100,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 101,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 102,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 103,
+          "mode": "aggressive",
+          "money": 700,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 104,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 105,
+          "mode": "aggressive",
+          "money": 200,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 106,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 107,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 108,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 109,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 110,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 111,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        }
+      ]
+    },
+    {
+      "round": 5,
+      "battleResults": [],
+      "kingdoms": [
+        {
+          "id": 100,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 101,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 102,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 103,
+          "mode": "aggressive",
+          "money": 700,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 104,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 105,
+          "mode": "aggressive",
+          "money": 200,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 106,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 107,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 108,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 109,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 110,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 111,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        }
+      ]
+    },
+    {
+      "round": 6,
+      "battleResults": [],
+      "kingdoms": [
+        {
+          "id": 100,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 101,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 102,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 103,
+          "mode": "aggressive",
+          "money": 700,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 104,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 105,
+          "mode": "aggressive",
+          "money": 200,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 106,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 107,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 108,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 109,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 110,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 111,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        }
+      ]
+    },
+    {
+      "round": 7,
+      "battleResults": [],
+      "kingdoms": [
+        {
+          "id": 100,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 101,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 102,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 103,
+          "mode": "aggressive",
+          "money": 700,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 104,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 105,
+          "mode": "aggressive",
+          "money": 200,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 106,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 107,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 108,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 109,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 110,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 111,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        }
+      ]
+    },
+    {
+      "round": 8,
+      "battleResults": [],
+      "kingdoms": [
+        {
+          "id": 100,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 101,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 102,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 103,
+          "mode": "aggressive",
+          "money": 700,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 104,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 105,
+          "mode": "aggressive",
+          "money": 200,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 106,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 107,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 108,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 109,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 110,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 111,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        }
+      ]
+    },
+    {
+      "round": 9,
+      "battleResults": [],
+      "kingdoms": [
+        {
+          "id": 100,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 101,
+          "mode": "aggressive",
+          "money": 100,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 102,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 103,
+          "mode": "aggressive",
+          "money": 700,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 104,
+          "mode": "aggressive",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 105,
+          "mode": "aggressive",
+          "money": 200,
+          "alive": true,
+          "army": 0
+        },
+        {
+          "id": 106,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 107,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 108,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        },
+        {
+          "id": 109,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 110,
+          "mode": "peaceful",
+          "money": 0,
+          "alive": false,
+          "army": 0
+        },
+        {
+          "id": 111,
+          "mode": "peaceful",
+          "money": 100,
+          "alive": true,
+          "army": 100
+        }
+      ]
+    }
+  ]
+}

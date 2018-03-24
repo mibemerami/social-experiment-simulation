@@ -1,5 +1,7 @@
 "use strict";
 
+const fs = require("fs");
+
 let report = {};
 
 function initializeReportObject(
@@ -51,12 +53,24 @@ function copyLastRound(report, currendRound) {
   report.rounds.push(lastRoundCopy);
   return report;
 }
-
+function writeReportToFile(report, appendFileFunction) {
+  if (typeof appendFileFunction === "undefined") {
+    appendFileFunction = fs.appendFile;
+  }
+  appendFileFunction(
+    "experiment-report.json",
+    JSON.stringify(report, null, 2),
+    err => {
+      console.log(err);
+    }
+  );
+}
 module.exports = {
   report: report,
   initializeReportObject: initializeReportObject,
   setReportRound: setReportRound,
   setBattleResults: setBattleResults,
   setChangedKingdoms: setChangedKingdoms,
-  copyLastRound: copyLastRound
+  copyLastRound: copyLastRound,
+  writeReportToFile: writeReportToFile
 };

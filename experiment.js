@@ -263,6 +263,7 @@ var startExperiment = function(
     console.log("All kingdoms after turn: ");
     console.log(kingdoms);
   }
+  reportLogs.writeReportToFile(reportLogs.report);
   return reportLogs.report;
 };
 

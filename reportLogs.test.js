@@ -1,6 +1,8 @@
 "use strict";
 
 const reportLogs = require("./reportLogs");
+const mockFs = require("mock-fs");
+const fs = require("fs");
 
 describe("report creation", () => {
   // Creates the basic report-object, and fills it with some initial data.
@@ -312,5 +314,40 @@ describe("copyLastRound", () => {
     const currendRound = 2;
     testReport = reportLogs.copyLastRound(testReport, currendRound);
     expect(testReport).toEqual(controlReport);
+  });
+});
+
+describe("writeReportToFile", () => {
+  it("it calls the function to write the file in a correct manner.", () => {
+    let mockFs = {
+      appendFile: (fileName, fileContent, cb) => {
+        expect(typeof fileName).toBe("string");
+        expect(typeof fileContent).toBe("string");
+        expect(typeof cb).toBe("function");
+      }
+    };
+
+    let testReport = {
+      initialValues: {
+        date: "2018-03-10T01:01:17.160Z",
+        startParams: {
+          aggressiveKingdoms: 6,
+          peacefulKingdoms: 6,
+          rounds: 10,
+          startMoney: 100,
+          startArmy: 100
+        },
+        kingdoms: [{}, {}]
+      },
+      rounds: [{ round: 0 }, { round: 1 }]
+    };
+    fs.readdir("./", (err, res) => {
+      console.log(res);
+    });
+    reportLogs.writeReportToFile(testReport, mockFs.appendFile);
+  });
+  it("works also if no write-function is passed", () => {
+    let testReport = {};
+    reportLogs.writeReportToFile(testReport);
   });
 });
